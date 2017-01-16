@@ -1,0 +1,74 @@
+[
+  {
+    "title": "should be 'false' for 'film' at 14h10",
+    "context": {
+      "timeOfDay": 14.15,
+      "category": "international",
+      "tz": "+00:00"
+    },
+    "output": {
+      "context": {
+        "timeOfDay": 14.15,
+        "category": "international",
+        "tz": "+00:00"
+      },
+      "confidence": 0.6774609088897705,
+       "decision": {
+        "open": "false"
+      },
+      "predicates": [
+        {
+          "op": "interval.in",
+          "property": "timeOfDay",
+          "value": {
+            "interval": {
+              "from_included": 14.116667,
+              "to_excluded": 14.2
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "title": "should be 'not interested' for 'film' at 14h20",
+    "context": {
+      "timeOfDay": 14.30,
+      "category": "international",
+      "tz": "+00:00"
+    },
+    "output": {
+      "context": {
+        "timeOfDay": 14.30,
+        "category": "international",
+        "tz": "+00:00"
+      },
+      "confidence": 0.8077218532562256,
+       "decision": {
+        "open": "not interested"
+      },
+      "predicates": [
+        {
+          "op": "interval.in",
+          "property": "timeOfDay",
+          "value": {
+            "interval": {
+              "from_included": 14.2,
+              "to_excluded": 14.116667
+            }
+          }
+        },
+        {
+          "op": "interval.in",
+          "property": "timeOfDay",
+          "value": {
+            "interval": {
+              "from_included": 14.2,
+              "to_excluded": 14.366667
+            }
+          }
+        }
+      ]
+    }
+  }
+]

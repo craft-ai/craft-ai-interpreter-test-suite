@@ -1,0 +1,85 @@
+[
+  {
+    "version": "0.0.3"
+  },
+  {
+    "context": {
+      "category": {
+        "type": "enum"
+      },
+      "timeOfDay": {
+        "type": "time_of_day",
+        "is_generated": true
+      },
+      "tz": {
+        "type": "timezone"
+      },
+      "open": {
+        "type": "enum"
+      }
+    },
+    "output": [
+      "open"
+    ],
+    "time_quantum": 300
+  },
+  {
+    "children": [
+      {
+        "confidence": 0.6774609088897705,
+        "predicate": {
+          "op": "interval.in",
+          "value": {
+            "interval": {
+              "from_included": 14.116667,
+              "to_excluded": 14.2
+            }
+          }
+        },
+        "value": "false"
+      },
+      {
+        "children": [
+          {
+            "confidence": 0.8077218532562256,
+            "predicate": {
+              "op": "interval.in",
+              "value": {
+                "interval": {
+                  "from_included": 14.2,
+                  "to_excluded": 14.366667
+                }
+              }
+            },
+            "value": "not interested"
+          },
+          {
+            "confidence": 0.6774609088897705,
+            "predicate": {
+              "op": "interval.in",
+              "value": {
+                "interval": {
+                  "from_included": 14.366667,
+                  "to_excluded": 14.116667
+                }
+              }
+            },
+            "value": "true"
+          }
+        ],
+        "predicate": {
+          "op": "interval.in",
+          "value": {
+            "interval": {
+              "from_included": 14.2,
+              "to_excluded": 14.116667
+            }
+          }
+        },
+        "predicate_property": "timeOfDay"
+      }
+    ],
+    "output_property": "open",
+    "predicate_property": "timeOfDay"
+  }
+]
