@@ -1,0 +1,27 @@
+[
+  {
+    "title": "succeeds with a continuous output",
+    "context": {
+      "timeOfDay": 5,
+      "tz": "+02:00"
+    },
+    "output": {
+      "context": {
+        "timeOfDay": 5,
+        "tz": "+02:00"
+      },
+      "decision": {
+        "temperature": 2.0,
+        "standard_deviation": 0.25
+      },
+      "confidence": 0.99,
+      "predicates": [
+        {
+          "op": "continuous.lessthan",
+          "property": "timeOfDay",
+          "value": "6"
+        }
+      ]
+    }
+  }
+]
