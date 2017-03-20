@@ -1,9 +1,17 @@
-[
-  {
-    "version": "0.0.1"
+{
+  "_version": "1.0.0",
+  "configuration": {
+    "context": {
+      "value": {
+        "type": "enum"
+      }
+    },
+    "output": ["value"]
   },
-  {
-    "value": "#ffffff",
-    "confidence": 0.99
+  "trees": {
+    "value": {
+      "predicted_value": "#ffffff",
+      "confidence": 0.99
+    }
   }
-]
+}

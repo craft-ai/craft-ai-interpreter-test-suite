@@ -1,8 +1,6 @@
-[
-  {
-    "version": "0.0.3"
-  },
-  {
+{
+  "_version": "1.0.0",
+  "configuration": {
     "context": {
       "category": {
         "type": "enum"
@@ -23,63 +21,58 @@
     ],
     "time_quantum": 300
   },
-  {
-    "children": [
-      {
-        "confidence": 0.6774609088897705,
-        "predicate": {
-          "op": "interval.in",
-          "value": {
-            "interval": {
-              "from_included": 14.116667,
-              "to_excluded": 14.2
-            }
-          }
-        },
-        "value": "false"
-      },
-      {
-        "children": [
-          {
-            "confidence": 0.8077218532562256,
-            "predicate": {
-              "op": "interval.in",
-              "value": {
-                "interval": {
-                  "from_included": 14.2,
-                  "to_excluded": 14.366667
-                }
-              }
-            },
-            "value": "not interested"
+  "trees": {
+    "open": {
+      "children": [
+        {
+          "confidence": 0.6774609088897705,
+          "decision_rule": {
+            "operator": "[in[",
+            "operand": [
+              14.116667,
+              14.2
+            ],
+            "property": "timeOfDay"
           },
-          {
-            "confidence": 0.6774609088897705,
-            "predicate": {
-              "op": "interval.in",
-              "value": {
-                "interval": {
-                  "from_included": 14.366667,
-                  "to_excluded": 14.116667
-                }
-              }
-            },
-            "value": "true"
-          }
-        ],
-        "predicate": {
-          "op": "interval.in",
-          "value": {
-            "interval": {
-              "from_included": 14.2,
-              "to_excluded": 14.116667
-            }
-          }
+          "predicted_value": "false"
         },
-        "predicate_property": "timeOfDay"
-      }
-    ],
-    "output_property": "open",
-    "predicate_property": "timeOfDay"
+        {
+          "children": [
+            {
+              "confidence": 0.8077218532562256,
+              "decision_rule": {
+                "operator": "[in[",
+                "operand": [
+                  14.2,
+                  14.366667
+                ],
+                "property": "timeOfDay"
+              },
+              "predicted_value": "not interested"
+            },
+            {
+              "confidence": 0.6774609088897705,
+              "decision_rule": {
+                "operator": "[in[",
+                "operand": [
+                  14.366667,
+                  14.116667
+                ],
+                "property": "timeOfDay"
+              },
+              "predicted_value": "true"
+            }
+          ],
+          "decision_rule": {
+            "operator": "[in[",
+            "operand": [
+              14.2,
+              14.116667
+            ],
+            "property": "timeOfDay"
+          }
+        }
+      ]
+    }
   }
-]
+}

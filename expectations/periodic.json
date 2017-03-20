@@ -7,27 +7,25 @@
       "tz": "+00:00"
     },
     "output": {
+      "_version": "1.0.0",
       "context": {
         "timeOfDay": 14.15,
         "category": "international",
         "tz": "+00:00"
       },
-      "confidence": 0.6774609088897705,
-       "decision": {
-        "open": "false"
-      },
-      "predicates": [
-        {
-          "op": "interval.in",
-          "property": "timeOfDay",
-          "value": {
-            "interval": {
-              "from_included": 14.116667,
-              "to_excluded": 14.2
+      "output": {
+        "open": {
+          "predicted_value": "false",
+          "confidence": 0.6774609088897705,
+          "decision_rules": [
+            {
+              "operator": "[in[",
+              "property": "timeOfDay",
+              "operand": [14.116667, 14.2]
             }
-          }
+          ]
         }
-      ]
+      }
     }
   },
   {
@@ -38,37 +36,30 @@
       "tz": "+00:00"
     },
     "output": {
+      "_version": "1.0.0",
       "context": {
         "timeOfDay": 14.30,
         "category": "international",
         "tz": "+00:00"
       },
-      "confidence": 0.8077218532562256,
-       "decision": {
-        "open": "not interested"
-      },
-      "predicates": [
-        {
-          "op": "interval.in",
-          "property": "timeOfDay",
-          "value": {
-            "interval": {
-              "from_included": 14.2,
-              "to_excluded": 14.116667
+      "output": {
+        "open": {
+          "predicted_value": "not interested",
+          "confidence": 0.8077218532562256,
+          "decision_rules": [
+            {
+              "operator": "[in[",
+              "property": "timeOfDay",
+              "operand": [14.2, 14.116667]
+            },
+            {
+              "operator": "[in[",
+              "property": "timeOfDay",
+              "operand": [14.2, 14.366667]
             }
-          }
-        },
-        {
-          "op": "interval.in",
-          "property": "timeOfDay",
-          "value": {
-            "interval": {
-              "from_included": 14.2,
-              "to_excluded": 14.366667
-            }
-          }
+          ]
         }
-      ]
+      }
     }
   }
 ]
