@@ -3,12 +3,15 @@
     "title": "succeeds with an empty context",
     "context": {},
     "output": {
+      "_version": "1.0.0",
       "context": {},
-      "decision": {
-        "value": "#ffffff"
-      },
-      "confidence": 0.99,
-      "predicates": []
+      "output": {
+        "value": {
+          "predicted_value": "#ffffff",
+          "confidence": 0.99,
+          "decision_rules": []
+        }
+      }
     }
   }
 ]

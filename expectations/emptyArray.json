@@ -3,7 +3,7 @@
     "title": "fails",
     "context": {},
     "error": {
-      "message": "Invalid decision tree format, unable to find the version informations."
+      "message": "Invalid decision tree format, the given json is not an object."
     }
   }
 ]
