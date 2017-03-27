@@ -1,0 +1,11 @@
+[
+  {
+    "title": "fails if a property of the given context contains an unexpected value",
+    "context": {
+      "test": "no"
+    },
+    "error": {
+      "message": "CraftAiDecisionError: Unable to take decision: 'no' not found amongst values for the 'test' property."
+    }
+  }
+]

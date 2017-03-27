@@ -1,6 +1,16 @@
 [
   {
-    "title": "should be 'CLOSED' on tuesday 7h15",
+    "title": "fails if the given context is not complete",
+    "context": {
+      "time": 7.25,
+      "tz": "+02:00"
+    },
+    "error": {
+      "message": "CraftAiDecisionError: Unable to take decision, property 'day' is missing from the given context."
+    }
+  },
+  {
+    "title": "light intensity should be 0.065000005 on tuesday 7h15",
     "context": {
       "time": 7.25,
       "day": 2,
