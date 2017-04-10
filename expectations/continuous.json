@@ -6,7 +6,61 @@
       "tz": "+02:00"
     },
     "error": {
-      "message": "CraftAiDecisionError: Unable to take decision, property 'day' is missing from the given context."
+      "message": "CraftAiDecisionError: Unable to take decision, the given context is not valid: property 'day' is not defined."
+    }
+  },
+  {
+    "title": "fails if one of property of the given context has an invalid 'time_of_day' value",
+    "context": {
+      "day": 2,
+      "time": "not a time",
+      "tz": "+02:00"
+    },
+    "error": {
+      "message": "CraftAiDecisionError: Unable to take decision, the given context is not valid: property 'time' value, 'not a time', is not valid for type 'time_of_day'."
+    }
+  },
+  {
+    "title": "fails if one of property of the given context has an(other) invalid 'time_of_day' value",
+    "context": {
+      "day": 2,
+      "time": -4,
+      "tz": "+02:00"
+    },
+    "error": {
+      "message": "CraftAiDecisionError: Unable to take decision, the given context is not valid: property 'time' value, '-4', is not valid for type 'time_of_day'."
+    }
+  },
+  {
+    "title": "fails if one of property of the given context has an invalid 'timezone' value",
+    "context": {
+      "day": 2,
+      "time": 7.25,
+      "tz": "BAD"
+    },
+    "error": {
+      "message": "CraftAiDecisionError: Unable to take decision, the given context is not valid: property 'tz' value, 'BAD', is not valid for type 'timezone'."
+    }
+  },
+  {
+    "title": "fails if one of property of the given context has an invalid 'day_of_week' value",
+    "context": {
+      "day": 2.7,
+      "time": 7.25,
+      "tz": "+02:00"
+    },
+    "error": {
+      "message": "CraftAiDecisionError: Unable to take decision, the given context is not valid: property 'day' value, '2.7', is not valid for type 'day_of_week'."
+    }
+  },
+  {
+    "title": "fails if the given context has multiple invalid values",
+    "context": {
+      "day": 8,
+      "time": 7.25
+    },
+    "error": {
+      "message": "CraftAiDecisionError: Unable to take decision, the given context is not valid: property 'tz' is not defined, property 'day' value, '8', is not valid for type 'day_of_week'."
     }
   },
   {

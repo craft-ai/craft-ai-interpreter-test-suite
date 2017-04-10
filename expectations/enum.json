@@ -1,9 +1,59 @@
 [
   {
+    "title": "fails if two properties of the given context have missing values",
+    "context": {
+      "timeOfDay": 14.15
+    },
+    "error": {
+      "message": "CraftAiDecisionError: Unable to take decision, the given context is not valid: property 'category' is not defined, property 'tz' is not defined."
+    }
+  },
+  {
+    "title": "fails if one property of the given context has an invalid 'enum' value",
+    "context": {
+      "timeOfDay": 14.15,
+      "category": 3.14,
+      "tz": "+00:00"
+    },
+    "error": {
+      "message": "CraftAiDecisionError: Unable to take decision, the given context is not valid: property 'category' value, '3.14', is not valid for type 'enum'."
+    }
+  },
+  {
     "title": "should be 'false' for 'film' at 14h10",
     "context": {
       "timeOfDay": 14.15,
       "category": "international",
+      "tz": "+00:00"
+    },
+    "output": {
+      "_version": "1.0.0",
+      "context": {
+        "timeOfDay": 14.15,
+        "category": "international",
+        "tz": "+00:00"
+      },
+      "output": {
+        "open": {
+          "predicted_value": "false",
+          "confidence": 0.6774609088897705,
+          "decision_rules": [
+            {
+              "operator": "[in[",
+              "property": "timeOfDay",
+              "operand": [14.116667, 14.2]
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "title": "should be 'false' for 'film' at 14h10 (even wih additional context properties)",
+    "context": {
+      "timeOfDay": 14.15,
+      "category": "international",
+      "foo": "bar",
       "tz": "+00:00"
     },
     "output": {
