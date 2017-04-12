@@ -5,7 +5,7 @@
       "timeOfDay": 14.15
     },
     "error": {
-      "message": "CraftAiDecisionError: Unable to take decision, the given context is not valid: property 'category' is not defined, property 'tz' is not defined."
+      "message": "CraftAiDecisionError: Unable to take decision, the given context is not valid: expected property 'category' is not defined, expected property 'tz' is not defined."
     }
   },
   {
@@ -16,7 +16,7 @@
       "tz": "+00:00"
     },
     "error": {
-      "message": "CraftAiDecisionError: Unable to take decision, the given context is not valid: property 'category' value, '3.14', is not valid for type 'enum'."
+      "message": "CraftAiDecisionError: Unable to take decision, the given context is not valid: '3.14' is not a valid value for property 'category' of type 'enum'."
     }
   },
   {
