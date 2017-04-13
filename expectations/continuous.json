@@ -56,15 +56,15 @@
   {
     "title": "fails if the given context has multiple invalid values",
     "context": {
-      "day": 8,
+      "day": 7,
       "time": 7.25
     },
     "error": {
-      "message": "CraftAiDecisionError: Unable to take decision, the given context is not valid: expected property 'tz' is not defined, '8' is not a valid value for property 'day' of type 'day_of_week'."
+      "message": "CraftAiDecisionError: Unable to take decision, the given context is not valid: expected property 'tz' is not defined, '7' is not a valid value for property 'day' of type 'day_of_week'."
     }
   },
   {
-    "title": "light intensity should be 0.065000005 on tuesday 7h15",
+    "title": "light intensity should be 0.065000005 on wednesday 7h15",
     "context": {
       "time": 7.25,
       "day": 2,
@@ -116,6 +116,60 @@
             }
           ],
           "standard_deviation": 0.17416467
+        }
+      }
+    }
+  },
+  {
+    "title": "light intensity should be 0.6847388 on monday at 13h00",
+    "context": {
+      "time": 13,
+      "day": 0,
+      "tz": "+02:00"
+    },
+    "output": {
+      "_version": "1.0.0",
+      "context": {
+        "time": 13,
+        "day": 0,
+        "tz": "+02:00"
+      },
+      "output": {
+        "lightIntensity": {
+          "predicted_value": 0.6847388,
+          "confidence": 0.8547552824020386,
+          "standard_deviation": 0.11337655,
+          "decision_rules": [
+            {
+              "operand": [
+                8,
+                19.166666
+              ],
+              "operator": "[in[",
+              "property": "time"
+            },
+            {
+              "operand": [
+                0,
+                5
+              ],
+              "operator": "[in[",
+              "property": "day"
+            },
+            {
+              "operand": "+02:00",
+              "operator": "is",
+              "property": "tz"
+            },
+            {
+              "operand": [
+                0,
+                3
+              ],
+              "operator": "[in[",
+              "property": "day"
+            }
+          ]
         }
       }
     }
