@@ -5,7 +5,7 @@
       "test": "no"
     },
     "error": {
-      "message": "CraftAiDecisionError: Unable to take decision: 'no' not found amongst values for the 'test' property."
+      "message": "CraftAiDecisionError: Unable to take decision: value 'no' for property 'test' is not found in the subtree and doesn't lead to any decision."
     }
   }
 ]
