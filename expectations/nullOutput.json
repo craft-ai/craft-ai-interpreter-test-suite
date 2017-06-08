@@ -1,0 +1,11 @@
+[
+  {
+    "title": "fails null value in the leaf",
+    "context": {
+      "test": "true"
+    },
+    "error": {
+      "message": "CraftAiNullDecisionError: Unable to take decision: decision rules lead to a leaf with a null output value. The tree couldn't infer a valid output value."
+    }
+  }
+]
