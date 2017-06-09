@@ -17,7 +17,7 @@
       "enum7": "average"
     },
     "error": {
-      "message": "CraftAiDecisionError: Unable to take decision: value 'non_applicable' for property 'enum6' doesn't validate any of the decision rules.",
+      "message": "CraftAiNullDecisionError: Unable to take decision: value 'non_applicable' for property 'enum6' doesn't validate any of the decision rules.",
       "additionalData": {
         "property": "enum6",
         "value": "non_applicable",

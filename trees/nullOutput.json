@@ -1,0 +1,38 @@
+{
+  "_version": "1.0.0",
+  "configuration": {
+    "context": {
+      "position": {
+        "type": "continuous"
+      },
+      "test": {
+        "type": "enum"
+      }
+    },
+    "output": ["position"]
+  },
+  "trees": {
+    "position": {
+      "children": [
+        {
+          "decision_rule": {
+            "operator": "is",
+            "operand": "false",
+            "property": "test"
+          },
+          "predicted_value": 18.1,
+          "confidence": 0.9973324159369238
+        },
+        {
+          "decision_rule": {
+            "operator": "is",
+            "operand": "true",
+            "property": "test"
+          },
+          "predicted_value": null,
+          "confidence": 0.0
+        }
+      ]
+    }
+  }
+}
