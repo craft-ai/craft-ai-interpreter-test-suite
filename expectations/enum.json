@@ -27,7 +27,7 @@
       "tz": "+00:00"
     },
     "output": {
-      "_version": "1.0.0",
+      "_version": "1.1.0",
       "context": {
         "timeOfDay": 14.15,
         "category": "international",
@@ -57,7 +57,7 @@
       "tz": "+00:00"
     },
     "output": {
-      "_version": "1.0.0",
+      "_version": "1.1.0",
       "context": {
         "timeOfDay": 14.15,
         "category": "international",
@@ -86,7 +86,7 @@
       "tz": "+00:00"
     },
     "output": {
-      "_version": "1.0.0",
+      "_version": "1.1.0",
       "context": {
         "timeOfDay": 14.30,
         "category": "international",

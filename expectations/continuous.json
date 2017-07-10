@@ -71,7 +71,7 @@
       "tz": "+02:00"
     },
     "output": {
-      "_version": "1.0.0",
+      "_version": "1.1.0",
       "context": {
         "time": 7.25,
         "day": 2,
@@ -128,7 +128,7 @@
       "tz": "+02:00"
     },
     "output": {
-      "_version": "1.0.0",
+      "_version": "1.1.0",
       "context": {
         "time": 13,
         "day": 0,
