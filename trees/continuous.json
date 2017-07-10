@@ -373,6 +373,9 @@
   "configuration": {
     "time_quantum": 600,
     "learning_period": 9000000,
+    "operations_as_events": true,
+    "tree_max_depth": 5,
+    "tree_max_operations": 1000,
     "context": {
       "lightIntensity": {
         "type": "continuous"
