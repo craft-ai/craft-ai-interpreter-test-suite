@@ -5,7 +5,7 @@
       "test": "no"
     },
     "error": {
-      "message": "CraftAiNullDecisionError: Unable to take decision: value 'no' for property 'test' doesn't validate any of the decision rules."
+      "message": "Unable to take decision: value 'no' for property 'test' doesn't validate any of the decision rules."
     }
   }
 ]

@@ -5,7 +5,7 @@
       "test": "true"
     },
     "error": {
-      "message": "CraftAiNullDecisionError: Unable to take decision: the decision tree has no valid predicted value for the given context."
+      "message": "Unable to take decision: the decision tree has no valid predicted value for the given context."
     }
   }
 ]
