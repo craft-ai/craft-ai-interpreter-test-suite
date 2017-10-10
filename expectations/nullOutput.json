@@ -5,7 +5,16 @@
       "test": "true"
     },
     "error": {
-      "message": "Unable to take decision: the decision tree has no valid predicted value for the given context."
+      "message": "Unable to take decision: the decision tree has no valid predicted value for the given context.",
+      "metadata": {
+        "decision_rules": [
+          {
+            "operand": "true",
+            "operator": "is",
+            "property": "test"
+          }
+        ]
+      }
     }
   }
 ]
