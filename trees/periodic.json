@@ -1,0 +1,359 @@
+{
+  "_version": "1.1.0",
+  "configuration": {
+    "time_quantum": 3600,
+    "learning_period": 54000000,
+    "context": {
+      "tz": {
+        "type": "timezone"
+      },
+      "time": {
+        "type": "time_of_day",
+        "is_generated": true
+      },
+      "p": {
+        "type": "continuous"
+      },
+      "dir": {
+        "type": "periodic"
+      },
+      "it": {
+        "type": "continuous"
+      },
+      "norm": {
+        "type": "continuous"
+      },
+      "ot": {
+        "type": "continuous"
+      },
+      "oh": {
+        "type": "continuous"
+      }
+    },
+    "output": [
+      "it"
+    ]
+  },
+  "trees": {
+    "it": {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "confidence": 0.7077222466468811,
+                      "decision_rule": {
+                        "operand": 6.1499996,
+                        "operator": "<",
+                        "property": "ot"
+                      },
+                      "predicted_value": 15.980855,
+                      "standard_deviation": 6.3621416
+                    },
+                    {
+                      "confidence": 0.7267184853553772,
+                      "decision_rule": {
+                        "operand": 6.1499996,
+                        "operator": ">=",
+                        "property": "ot"
+                      },
+                      "predicted_value": 21.592722,
+                      "standard_deviation": 7.8522334
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": [
+                      1,
+                      12
+                    ],
+                    "operator": "[in[",
+                    "property": "time"
+                  }
+                },
+                {
+                  "children": [
+                    {
+                      "confidence": 0.8106237053871155,
+                      "decision_rule": {
+                        "operand": 2.28,
+                        "operator": "<",
+                        "property": "norm"
+                      },
+                      "predicted_value": 17.346033,
+                      "standard_deviation": 3.7179956
+                    },
+                    {
+                      "confidence": 0.7755794525146484,
+                      "decision_rule": {
+                        "operand": 2.28,
+                        "operator": ">=",
+                        "property": "norm"
+                      },
+                      "predicted_value": 14.340629,
+                      "standard_deviation": 3.9589624
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": [
+                      12,
+                      1
+                    ],
+                    "operator": "[in[",
+                    "property": "time"
+                  }
+                }
+              ],
+              "decision_rule": {
+                "operand": [
+                  159.004,
+                  300
+                ],
+                "operator": "[in[",
+                "property": "dir"
+              }
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "confidence": 0.819686770439148,
+                      "decision_rule": {
+                        "operand": [
+                          8,
+                          19
+                        ],
+                        "operator": "[in[",
+                        "property": "time"
+                      },
+                      "predicted_value": 18.189474,
+                      "standard_deviation": 3.7130969
+                    },
+                    {
+                      "confidence": 0.7979375720024109,
+                      "decision_rule": {
+                        "operand": [
+                          19,
+                          8
+                        ],
+                        "operator": "[in[",
+                        "property": "time"
+                      },
+                      "predicted_value": 21.746876,
+                      "standard_deviation": 5.2957106
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": 1026.5,
+                    "operator": "<",
+                    "property": "p"
+                  }
+                },
+                {
+                  "children": [
+                    {
+                      "confidence": 0.8156102895736694,
+                      "decision_rule": {
+                        "operand": 86.5,
+                        "operator": "<",
+                        "property": "oh"
+                      },
+                      "predicted_value": 30.65,
+                      "standard_deviation": 5.71699
+                    },
+                    {
+                      "confidence": 0.8070890307426453,
+                      "decision_rule": {
+                        "operand": 86.5,
+                        "operator": ">=",
+                        "property": "oh"
+                      },
+                      "predicted_value": 23.87647,
+                      "standard_deviation": 4.8617277
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": 1026.5,
+                    "operator": ">=",
+                    "property": "p"
+                  }
+                }
+              ],
+              "decision_rule": {
+                "operand": [
+                  300,
+                  159.004
+                ],
+                "operator": "[in[",
+                "property": "dir"
+              }
+            }
+          ],
+          "decision_rule": {
+            "operand": 9.75,
+            "operator": "<",
+            "property": "ot"
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "confidence": 0.9163457751274108,
+                      "decision_rule": {
+                        "operand": 85,
+                        "operator": "<",
+                        "property": "oh"
+                      },
+                      "predicted_value": 16.411537,
+                      "standard_deviation": 0.83490247
+                    },
+                    {
+                      "confidence": 0.7478266358375549,
+                      "decision_rule": {
+                        "operand": 85,
+                        "operator": ">=",
+                        "property": "oh"
+                      },
+                      "predicted_value": 19.866667,
+                      "standard_deviation": 0.05773552
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": 1006.5,
+                    "operator": "<",
+                    "property": "p"
+                  }
+                },
+                {
+                  "children": [
+                    {
+                      "confidence": 0.8372429013252258,
+                      "decision_rule": {
+                        "operand": [
+                          90,
+                          200
+                        ],
+                        "operator": "[in[",
+                        "property": "dir"
+                      },
+                      "predicted_value": 29.683817,
+                      "standard_deviation": 5.2565985
+                    },
+                    {
+                      "confidence": 0.8101604580879211,
+                      "decision_rule": {
+                        "operand": [
+                          200,
+                          90
+                        ],
+                        "operator": "[in[",
+                        "property": "dir"
+                      },
+                      "predicted_value": 21.967922,
+                      "standard_deviation": 4.6454597
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": 1006.5,
+                    "operator": ">=",
+                    "property": "p"
+                  }
+                }
+              ],
+              "decision_rule": {
+                "operand": 1012.5,
+                "operator": "<",
+                "property": "p"
+              }
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "confidence": 0.7549400925636292,
+                      "decision_rule": {
+                        "operand": [
+                          13,
+                          19
+                        ],
+                        "operator": "[in[",
+                        "property": "time"
+                      },
+                      "predicted_value": 18.758614,
+                      "standard_deviation": 5.2609425
+                    },
+                    {
+                      "confidence": 0.8633171319961548,
+                      "decision_rule": {
+                        "operand": [
+                          19,
+                          13
+                        ],
+                        "operator": "[in[",
+                        "property": "time"
+                      },
+                      "predicted_value": 30.223812,
+                      "standard_deviation": 4.238106
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": 10.65,
+                    "operator": "<",
+                    "property": "ot"
+                  }
+                },
+                {
+                  "children": [
+                    {
+                      "confidence": 0.8937285542488098,
+                      "decision_rule": {
+                        "operand": 13.85,
+                        "operator": "<",
+                        "property": "ot"
+                      },
+                      "predicted_value": 30.6496,
+                      "standard_deviation": 3.507849
+                    },
+                    {
+                      "confidence": 0.953538179397583,
+                      "decision_rule": {
+                        "operand": 13.85,
+                        "operator": ">=",
+                        "property": "ot"
+                      },
+                      "predicted_value": 32.790287,
+                      "standard_deviation": 1.4698939
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": 10.65,
+                    "operator": ">=",
+                    "property": "ot"
+                  }
+                }
+              ],
+              "decision_rule": {
+                "operand": 1012.5,
+                "operator": ">=",
+                "property": "p"
+              }
+            }
+          ],
+          "decision_rule": {
+            "operand": 9.75,
+            "operator": ">=",
+            "property": "ot"
+          }
+        }
+      ]
+    }
+  }
+}
