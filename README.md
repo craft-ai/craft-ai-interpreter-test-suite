@@ -10,3 +10,7 @@ This is the official test suite for the different **craft ai** decision tree int
 ## decision rules reducer ##
 
 `./reduce_decision_rules` contains decision rules (as they appear in decision trees) and their expected reduction.
+
+## decision rules formatter ##
+
+`./format_decision_rules` contains decision rules (as they appear in decision trees) and their expected format.

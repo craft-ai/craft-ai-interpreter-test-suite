@@ -1,0 +1,241 @@
+[
+  {
+    "title": "in_time_of_day",
+    "rules": [
+      {
+        "operator": "[in[",
+        "operand": [
+          11.5,
+          12.3
+        ],
+        "type": "time_of_day"
+      }
+    ],
+    "expectation": {
+      "string": "[11:30, 12:18["
+    }
+  },
+  {
+    "title": "in_continuous",
+    "rules": [
+      {
+        "operator": "[in[",
+        "operand": [
+          11.5947,
+          12.309676
+        ],
+        "type": "continuous"
+      }
+    ],
+    "expectation": {
+      "string": "[11.59, 12.31["
+    }
+  },
+  {
+    "title": "day_of_week",
+    "rules": [
+      {
+        "operator": "[in[",
+        "operand": [
+          3,
+          5
+        ],
+        "type": "day_of_week"
+      }
+    ],
+    "expectation": {
+      "string": "Thu to Fri"
+    }
+  },
+  {
+    "title": "day_of_week_fri_to_sun",
+    "rules": [
+      {
+        "operator": "[in[",
+        "operand": [
+          4,
+          0
+        ],
+        "type": "day_of_week"
+      }
+    ],
+    "expectation": {
+      "string": "Fri to Sun"
+    }
+  },
+  {
+    "title": "month_of_year_jan_to_nov",
+    "rules": [
+      {
+        "property": "foo",
+        "operator": "[in[",
+        "operand": [
+          1,
+          12
+        ],
+        "type": "month_of_year"
+      }
+    ],
+    "expectation": {
+      "string": "'foo' from Jan to Nov"
+    }
+  },
+  {
+    "title": "month_of_year_apr_to_jan",
+    "rules": [
+      {
+        "operator": "[in[",
+        "operand": [
+          4,
+          2
+        ],
+        "type": "month_of_year"
+      }
+    ],
+    "expectation": {
+      "string": "Apr to Jan"
+    }
+  },
+  {
+    "title": "month_of_year_may_to_dec",
+    "rules": [
+      {
+        "operator": "[in[",
+        "operand": [
+          5,
+          1
+        ],
+        "type": "month_of_year"
+      }
+    ],
+    "expectation": {
+      "string": "May to Dec"
+    }
+  },
+  {
+    "title": "month_of_year_may_to_feb",
+    "rules": [
+      {
+        "operator": "[in[",
+        "operand": [
+          5,
+          3
+        ],
+        "type": "month_of_year"
+      }
+    ],
+    "expectation": {
+      "string": "May to Feb"
+    }
+  },
+  {
+    "title": "gt_continuous",
+    "rules": [
+      {
+        "property": "b",
+        "operator": ">=",
+        "operand": 3.14,
+        "type": "continuous"
+      }
+    ],
+    "expectation": {
+      "string": "'b' >= 3.14"
+    }
+  },
+  {
+    "title": "gt_enum",
+    "rules": [
+      {
+        "operator": ">=",
+        "operand": "foo",
+        "type": "enum"
+      }
+    ],
+    "expectation": {
+      "string": ">= foo"
+    }
+  },
+  {
+    "title": "lt_continuous",
+    "rules": [
+      {
+        "operator": "<",
+        "operand": 666,
+        "type": "continuous"
+      }
+    ],
+    "expectation": {
+      "string": "< 666"
+    }
+  },
+  {
+    "title": "lt_timezone",
+    "rules": [
+      {
+        "operator": "<",
+        "operand": "+02:00",
+        "type": "timezone"
+      }
+    ],
+    "expectation": {
+      "string": "< +02:00"
+    }
+  },
+  {
+    "title": "is_continuous",
+    "rules": [
+      {
+        "operator": "is",
+        "operand": 5637,
+        "type": "continuous"
+      }
+    ],
+    "expectation": {
+      "string": "is 5637"
+    }
+  },
+  {
+    "title": "is_enum",
+    "rules": [
+      {
+        "operator": "is",
+        "operand": "abracadabra",
+        "type": "enum"
+      }
+    ],
+    "expectation": {
+      "string": "is abracadabra"
+    }
+  },
+  {
+    "title": "multiple_rules",
+    "rules": [
+      {
+        "property": "b",
+        "operator": "[in[",
+        "operand": [
+          23,
+          2
+        ],
+        "type": "time_of_day"
+      },
+      {
+        "property": "a",
+        "operator": "[in[",
+        "operand": [
+          2,
+          5
+        ],
+        "type": "day_of_week"
+      },
+      {
+        "property": "c",
+        "operator": "<",
+        "operand": 2
+      }
+    ],
+    "expectation": {
+      "string": "'b' in [23:00, 02:00[ and 'a' from Wed to Fri and 'c' < 2"
+    }
+  }
+]
