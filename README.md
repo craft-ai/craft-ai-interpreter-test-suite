@@ -6,3 +6,7 @@ This is the official test suite for the different **craft ai** decision tree int
 
 - `./decide/trees` contains decision trees both invalid and valid, as computed by [craft ai](http://craft.ai).
 - `./decide/expectations` contains a files describing expectations on each decision tree. (`./decide/expectations/blind.json` contains expectations on `./decide/trees/blind.json`).
+
+## decision rules reducer ##
+
+`./reduce_decision_rules` contains decision rules (as they appear in decision trees) and their expected reduction.
