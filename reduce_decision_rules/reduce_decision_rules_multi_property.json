@@ -1,0 +1,114 @@
+[
+  {
+    "title": "reduce_decision_rules_2_properties",
+    "rules": [
+      {
+        "property": "a",
+        "operator": ">=",
+        "operand": 2
+      },
+      {
+        "property": "b",
+        "operator": "[in[",
+        "operand": [
+          23,
+          3
+        ]
+      },
+      {
+        "property": "a",
+        "operator": "<",
+        "operand": 13
+      },
+      {
+        "property": "b",
+        "operator": "[in[",
+        "operand": [
+          22,
+          2
+        ]
+      }
+    ],
+    "expectation": {
+      "rules": [
+        {
+          "property": "a",
+          "operator": "[in[",
+          "operand": [
+            2,
+            13
+          ]
+        },
+        {
+          "property": "b",
+          "operator": "[in[",
+          "operand": [
+            23,
+            2
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "reduce_decision_rules_3_properties",
+    "rules": [
+      {
+        "property": "b",
+        "operator": "[in[",
+        "operand": [
+          23,
+          3
+        ]
+      },
+      {
+        "property": "a",
+        "operator": ">=",
+        "operand": 2
+      },
+      {
+        "property": "c",
+        "operator": "<",
+        "operand": 2
+      },
+      {
+        "property": "a",
+        "operator": "<",
+        "operand": 13
+      },
+      {
+        "property": "b",
+        "operator": "[in[",
+        "operand": [
+          22,
+          2
+        ]
+      }
+    ],
+    "expectation": {
+      "rules": [
+        {
+          "property": "b",
+          "operator": "[in[",
+          "operand": [
+            23,
+            2
+          ]
+        },
+        {
+          "property": "a",
+          "operator": "[in[",
+          "operand": [
+            2,
+            13
+          ]
+        },
+        {
+          "property": "c",
+          "operator": "<",
+          "operand": 2
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,845 @@
+[
+  {
+    "title": "reduce_decision_rules_is_is",
+    "rules": [
+      {
+        "property": "test",
+        "operator": "is",
+        "operand": "toto"
+      },
+      {
+        "property": "test",
+        "operator": "is",
+        "operand": "toto"
+      }
+    ],
+    "expectation": {
+      "rules": [
+        {
+          "property": "test",
+          "operator": "is",
+          "operand": "toto"
+        }
+      ]
+    }
+  },
+  {
+    "title": "reduce_decision_rules_is",
+    "rules": [
+      {
+        "property": "test",
+        "operator": "is",
+        "operand": "toto"
+      }
+    ],
+    "expectation": {
+      "rules": [
+        {
+          "property": "test",
+          "operator": "is",
+          "operand": "toto"
+        }
+      ]
+    }
+  },
+  {
+    "title": "reduce_decision_rules_is_in",
+    "rules": [
+      {
+        "property": "test",
+        "operator": "is",
+        "operand": "toto"
+      },
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": "titi"
+      }
+    ],
+    "expectation": {
+      "error": true
+    }
+  },
+  {
+    "title": "reduce_decision_rules_is_is_diff_operands",
+    "rules": [
+      {
+        "property": "test",
+        "operator": "is",
+        "operand": "toto"
+      },
+      {
+        "property": "test",
+        "operator": "is",
+        "operand": "titi"
+      }
+    ],
+    "expectation": {
+      "error": true
+    }
+  },
+  {
+    "title": "reduce_decision_rules_in_in_1",
+    "rules": [
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          0,
+          13
+        ]
+      },
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          2,
+          12
+        ]
+      }
+    ],
+    "expectation": {
+      "rules": [
+        {
+          "property": "test",
+          "operator": "[in[",
+          "operand": [
+            2,
+            12
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "reduce_decision_rules_in_in_2",
+    "rules": [
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          0,
+          13
+        ]
+      },
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          2,
+          16
+        ]
+      }
+    ],
+    "expectation": {
+      "rules": [
+        {
+          "property": "test",
+          "operator": "[in[",
+          "operand": [
+            2,
+            13
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "reduce_decision_rules_in_in_3",
+    "rules": [
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          1,
+          13
+        ]
+      },
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          0,
+          12
+        ]
+      }
+    ],
+    "expectation": {
+      "rules": [
+        {
+          "property": "test",
+          "operator": "[in[",
+          "operand": [
+            1,
+            12
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "reduce_decision_rules_in_in_dow",
+    "rules": [
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          5,
+          3
+        ]
+      },
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          2,
+          3
+        ]
+      }
+    ],
+    "expectation": {
+      "rules": [
+        {
+          "property": "test",
+          "operator": "[in[",
+          "operand": [
+            2,
+            3
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "reduce_decision_rules_in_in_dom",
+    "rules": [
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          5,
+          4
+        ]
+      },
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          12,
+          1
+        ]
+      },
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          12,
+          16
+        ]
+      }
+    ],
+    "expectation": {
+      "rules": [
+        {
+          "property": "test",
+          "operator": "[in[",
+          "operand": [
+            12,
+            16
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "reduce_decision_rules_in_in_self",
+    "rules": [
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          3,
+          4
+        ]
+      },
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          3,
+          4
+        ]
+      }
+    ],
+    "expectation": {
+      "rules": [
+        {
+          "property": "test",
+          "operator": "[in[",
+          "operand": [
+            3,
+            4
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "reduce_decision_rules_in_in_self_p",
+    "rules": [
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          4,
+          2
+        ]
+      },
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          4,
+          2
+        ]
+      }
+    ],
+    "expectation": {
+      "rules": [
+        {
+          "property": "test",
+          "operator": "[in[",
+          "operand": [
+            4,
+            2
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "reduce_decision_rules_in_in_pnp_invalid_1",
+    "rules": [
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          15,
+          20
+        ]
+      },
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          22,
+          14
+        ]
+      }
+    ],
+    "expectation": {
+      "error": true
+    }
+  },
+  {
+    "title": "reduce_decision_rules_in_in_pnp_invalid_2",
+    "rules": [
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          15,
+          20
+        ]
+      },
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          22,
+          25
+        ]
+      }
+    ],
+    "expectation": {
+      "error": true
+    }
+  },
+  {
+    "title": "reduce_decision_rules_in",
+    "rules": [
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          1,
+          13
+        ]
+      }
+    ],
+    "expectation": {
+      "rules": [
+        {
+          "property": "test",
+          "operator": "[in[",
+          "operand": [
+            1,
+            13
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "reduce_decision_rules_in_is",
+    "rules": [
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          1,
+          13
+        ]
+      },
+      {
+        "property": "test",
+        "operator": "is",
+        "operand": "toto"
+      }
+    ],
+    "expectation": {
+      "error": true
+    }
+  },
+  {
+    "title": "reduce_decision_rules_in_lt",
+    "rules": [
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          1,
+          13
+        ]
+      },
+      {
+        "property": "test",
+        "operator": "<",
+        "operand": 2
+      }
+    ],
+    "expectation": {
+      "rules": [
+        {
+          "property": "test",
+          "operator": "[in[",
+          "operand": [
+            1,
+            2
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "reduce_decision_rules_in_gte",
+    "rules": [
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          1,
+          13
+        ]
+      },
+      {
+        "property": "test",
+        "operator": ">=",
+        "operand": 12
+      }
+    ],
+    "expectation": {
+      "rules": [
+        {
+          "property": "test",
+          "operator": "[in[",
+          "operand": [
+            12,
+            13
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "reduce_decision_rules_in_lt_gte",
+    "rules": [
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          1,
+          13
+        ]
+      },
+      {
+        "property": "test",
+        "operator": "<",
+        "operand": 12
+      },
+      {
+        "property": "test",
+        "operator": ">=",
+        "operand": 2
+      }
+    ],
+    "expectation": {
+      "rules": [
+        {
+          "property": "test",
+          "operator": "[in[",
+          "operand": [
+            2,
+            12
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "reduce_decision_rules_in_in_p",
+    "rules": [
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          23,
+          3
+        ]
+      },
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          22,
+          2
+        ]
+      }
+    ],
+    "expectation": {
+      "rules": [
+        {
+          "property": "test",
+          "operator": "[in[",
+          "operand": [
+            23,
+            2
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "reduce_decision_rules_lt_lt_1",
+    "rules": [
+      {
+        "property": "test",
+        "operator": "<",
+        "operand": 2
+      },
+      {
+        "property": "test",
+        "operator": "<",
+        "operand": 6
+      }
+    ],
+    "expectation": {
+      "rules": [
+        {
+          "property": "test",
+          "operator": "<",
+          "operand": 2
+        }
+      ]
+    }
+  },
+  {
+    "title": "reduce_decision_rules_lt_lt_2",
+    "rules": [
+      {
+        "property": "test",
+        "operator": "<",
+        "operand": 2
+      },
+      {
+        "property": "test",
+        "operator": "<",
+        "operand": 2
+      }
+    ],
+    "expectation": {
+      "rules": [
+        {
+          "property": "test",
+          "operator": "<",
+          "operand": 2
+        }
+      ]
+    }
+  },
+  {
+    "title": "reduce_decision_rules_lt",
+    "rules": [
+      {
+        "property": "test",
+        "operator": "<",
+        "operand": 2
+      }
+    ],
+    "expectation": {
+      "rules": [
+        {
+          "property": "test",
+          "operator": "<",
+          "operand": 2
+        }
+      ]
+    }
+  },
+  {
+    "title": "reduce_decision_rules_lt_in",
+    "rules": [
+      {
+        "property": "test",
+        "operator": "<",
+        "operand": 2
+      },
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          1,
+          13
+        ]
+      }
+    ],
+    "expectation": {
+      "rules": [
+        {
+          "property": "test",
+          "operator": "[in[",
+          "operand": [
+            1,
+            2
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "reduce_decision_rules_lt_gte",
+    "rules": [
+      {
+        "property": "test",
+        "operator": "<",
+        "operand": 13
+      },
+      {
+        "property": "test",
+        "operator": ">=",
+        "operand": 2
+      }
+    ],
+    "expectation": {
+      "rules": [
+        {
+          "property": "test",
+          "operator": "[in[",
+          "operand": [
+            2,
+            13
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "reduce_decision_rules_lt_gte_complex",
+    "rules": [
+      {
+        "property": "test",
+        "operator": "<",
+        "operand": 650
+      },
+      {
+        "property": "test",
+        "operator": ">=",
+        "operand": 232.82
+      },
+      {
+        "property": "test",
+        "operator": "<",
+        "operand": 251.99
+      },
+      {
+        "property": "test",
+        "operator": "<",
+        "operand": 345.22
+      }
+    ],
+    "expectation": {
+      "rules": [
+        {
+          "property": "test",
+          "operator": "[in[",
+          "operand": [
+            232.82,
+            251.99
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "reduce_decision_rules_gte_1",
+    "rules": [
+      {
+        "property": "test",
+        "operator": ">=",
+        "operand": 4
+      },
+      {
+        "property": "test",
+        "operator": ">=",
+        "operand": 2
+      }
+    ],
+    "expectation": {
+      "rules": [
+        {
+          "property": "test",
+          "operator": ">=",
+          "operand": 4
+        }
+      ]
+    }
+  },
+  {
+    "title": "reduce_decision_rules_gte_2",
+    "rules": [
+      {
+        "property": "test",
+        "operator": ">=",
+        "operand": 2
+      }
+    ],
+    "expectation": {
+      "rules": [
+        {
+          "property": "test",
+          "operator": ">=",
+          "operand": 2
+        }
+      ]
+    }
+  },
+  {
+    "title": "reduce_decision_rules_gte_gte_self",
+    "rules": [
+      {
+        "property": "test",
+        "operator": ">=",
+        "operand": 2
+      },
+      {
+        "property": "test",
+        "operator": ">=",
+        "operand": 2
+      }
+    ],
+    "expectation": {
+      "rules": [
+        {
+          "property": "test",
+          "operator": ">=",
+          "operand": 2
+        }
+      ]
+    }
+  },
+  {
+    "title": "reduce_decision_rules_gte_in",
+    "rules": [
+      {
+        "property": "test",
+        "operator": ">=",
+        "operand": 2
+      },
+      {
+        "property": "test",
+        "operator": "[in[",
+        "operand": [
+          1,
+          13
+        ]
+      }
+    ],
+    "expectation": {
+      "rules": [
+        {
+          "property": "test",
+          "operator": "[in[",
+          "operand": [
+            2,
+            13
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "reduce_decision_rules_gte_lt",
+    "rules": [
+      {
+        "property": "test",
+        "operator": ">=",
+        "operand": 2
+      },
+      {
+        "property": "test",
+        "operator": "<",
+        "operand": 13
+      }
+    ],
+    "expectation": {
+      "rules": [
+        {
+          "property": "test",
+          "operator": "[in[",
+          "operand": [
+            2,
+            13
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title": "reduce_decision_rules_gte_lt_bad",
+    "rules": [
+      {
+        "property": "test",
+        "operator": ">=",
+        "operand": 13
+      },
+      {
+        "property": "test",
+        "operator": "<",
+        "operand": 2
+      }
+    ],
+    "expectation": {
+      "error": true
+    }
+  }
+]
