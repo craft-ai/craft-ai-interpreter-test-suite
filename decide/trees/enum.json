@@ -19,10 +19,12 @@
     "output": [
       "open"
     ],
-    "time_quantum": 300
+    "time_quantum": 300,
+    "deactivate_missing_values": true
   },
   "trees": {
     "open": {
+      "output_values": ["false", "true"],
       "children": [
         {
           "confidence": 0.6774609088897705,

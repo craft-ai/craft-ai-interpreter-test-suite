@@ -6,10 +6,12 @@
         "type": "enum"
       }
     },
-    "output": ["value"]
+    "output": ["value"],
+    "deactivate_missing_values": true
   },
   "trees": {
     "value": {
+      "output_values": ["#ffffff"],
       "predicted_value": "#ffffff",
       "confidence": 0.99
     }

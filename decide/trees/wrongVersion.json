@@ -9,10 +9,12 @@
         "type": "continuous"
       }
     },
-    "output": ["position"]
+    "output": ["position"],
+    "deactivate_missing_values": true
   },
   "trees": {
     "position": {
+      "output_values": ["Down", "Up"],
       "children": [
         {
           "decision_rule": {

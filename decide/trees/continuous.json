@@ -394,6 +394,7 @@
     },
     "output": [
       "lightIntensity"
-    ]
+    ],
+    "deactivate_missing_values": true
   }
 }

@@ -9,7 +9,8 @@
         "type": "enum"
       }
     },
-    "output": ["position"]
+    "output": ["position"],
+    "deactivate_missing_values": true
   },
   "trees": {
     "position": {

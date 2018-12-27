@@ -53,10 +53,12 @@
     },
     "output": [
       "IndicateurCraft"
-    ]
+    ],
+    "deactivate_missing_values": true
   },
   "trees": {
     "IndicateurCraft": {
+      "output_values": ["No", "yes"],
       "children": [
         {
           "children": [
