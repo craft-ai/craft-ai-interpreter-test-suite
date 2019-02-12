@@ -24,7 +24,6 @@
   },
   "trees": {
     "open": {
-      "output_values": ["false", "true"],
       "children": [
         {
           "confidence": 0.6774609088897705,

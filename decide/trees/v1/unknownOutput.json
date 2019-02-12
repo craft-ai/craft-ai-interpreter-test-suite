@@ -1,0 +1,650 @@
+{
+  "_version": "1.1.0",
+  "configuration": {
+    "time_quantum": 86400,
+    "deactivate_sampling": true,
+    "deactivate_forgetting": true,
+    "deactivate_pruning": true,
+    "forgetting_max_quantums": 10000,
+    "forgetting_timestep": 10000,
+    "context": {
+      "continuous1": {
+        "type": "continuous"
+      },
+      "continuous2": {
+        "type": "continuous"
+      },
+      "IndicateurCraft": {
+        "type": "enum"
+      },
+      "continuous3": {
+        "type": "continuous"
+      },
+      "continuous4": {
+        "type": "continuous"
+      },
+      "enum1": {
+        "type": "enum"
+      },
+      "enum2": {
+        "type": "enum"
+      },
+      "continuous5": {
+        "type": "continuous"
+      },
+      "enum3": {
+        "type": "enum"
+      },
+      "continuous6": {
+        "type": "continuous"
+      },
+      "enum4": {
+        "type": "enum"
+      },
+      "enum5": {
+        "type": "enum"
+      },
+      "enum6": {
+        "type": "enum"
+      },
+      "enum7": {
+        "type": "enum"
+      }
+    },
+    "output": [
+      "IndicateurCraft"
+    ],
+    "deactivate_missing_values": true
+  },
+  "trees": {
+    "IndicateurCraft": {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "confidence": 0.6774609088897705,
+                          "decision_rule": {
+                            "operand": 38,
+                            "operator": "<",
+                            "property": "continuous3"
+                          },
+                          "predicted_value": "No"
+                        },
+                        {
+                          "children": [
+                            {
+                              "confidence": 0.8636752367019653,
+                              "decision_rule": {
+                                "operand": "ko",
+                                "operator": "is",
+                                "property": "enum2"
+                              },
+                              "predicted_value": "yes"
+                            },
+                            {
+                              "confidence": 0.33693182468414307,
+                              "decision_rule": {
+                                "operand": "ok",
+                                "operator": "is",
+                                "property": "enum2"
+                              },
+                              "predicted_value": "yes"
+                            }
+                          ],
+                          "decision_rule": {
+                            "operand": 38,
+                            "operator": ">=",
+                            "property": "continuous3"
+                          }
+                        }
+                      ],
+                      "decision_rule": {
+                        "operand": 1,
+                        "operator": "<",
+                        "property": "continuous5"
+                      }
+                    },
+                    {
+                      "children": [
+                        {
+                          "confidence": 0.9882375001907349,
+                          "decision_rule": {
+                            "operand": 1000000,
+                            "operator": "<",
+                            "property": "continuous6"
+                          },
+                          "predicted_value": "yes"
+                        },
+                        {
+                          "children": [
+                            {
+                              "confidence": 0.8630361557006836,
+                              "decision_rule": {
+                                "operand": 1,
+                                "operator": "<",
+                                "property": "continuous1"
+                              },
+                              "predicted_value": "yes"
+                            },
+                            {
+                              "confidence": 0.4678919315338135,
+                              "decision_rule": {
+                                "operand": 1,
+                                "operator": ">=",
+                                "property": "continuous1"
+                              },
+                              "predicted_value": "yes"
+                            }
+                          ],
+                          "decision_rule": {
+                            "operand": 1000000,
+                            "operator": ">=",
+                            "property": "continuous6"
+                          }
+                        }
+                      ],
+                      "decision_rule": {
+                        "operand": 1,
+                        "operator": ">=",
+                        "property": "continuous5"
+                      }
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": "titi",
+                    "operator": "is",
+                    "property": "enum1"
+                  }
+                },
+                {
+                  "children": [
+                    {
+                      "confidence": 0.6774609088897705,
+                      "decision_rule": {
+                        "operand": "good",
+                        "operator": "is",
+                        "property": "enum6"
+                      },
+                      "predicted_value": "yes"
+                    },
+                    {
+                      "confidence": 0.6774609088897705,
+                      "decision_rule": {
+                        "operand": "average",
+                        "operator": "is",
+                        "property": "enum6"
+                      },
+                      "predicted_value": "No"
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": "toto",
+                    "operator": "is",
+                    "property": "enum1"
+                  }
+                }
+              ],
+              "decision_rule": {
+                "operand": 430,
+                "operator": "<",
+                "property": "continuous3"
+              }
+            },
+            {
+              "confidence": 0.6774609088897705,
+              "decision_rule": {
+                "operand": 430,
+                "operator": ">=",
+                "property": "continuous3"
+              },
+              "predicted_value": "No"
+            }
+          ],
+          "decision_rule": {
+            "operand": "yes",
+            "operator": "is",
+            "property": "enum4"
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "confidence": 0.9711036086082458,
+                          "decision_rule": {
+                            "operand": 7,
+                            "operator": "<",
+                            "property": "continuous2"
+                          },
+                          "predicted_value": "No"
+                        },
+                        {
+                          "children": [
+                            {
+                              "confidence": 0.28075236082077026,
+                              "decision_rule": {
+                                "operand": 264,
+                                "operator": "<",
+                                "property": "continuous3"
+                              },
+                              "predicted_value": "yes"
+                            },
+                            {
+                              "confidence": 0.8630361557006836,
+                              "decision_rule": {
+                                "operand": 264,
+                                "operator": ">=",
+                                "property": "continuous3"
+                              },
+                              "predicted_value": "No"
+                            }
+                          ],
+                          "decision_rule": {
+                            "operand": 7,
+                            "operator": ">=",
+                            "property": "continuous2"
+                          }
+                        }
+                      ],
+                      "decision_rule": {
+                        "operand": "no",
+                        "operator": "is",
+                        "property": "enum3"
+                      }
+                    },
+                    {
+                      "children": [
+                        {
+                          "confidence": 0.6774609088897705,
+                          "decision_rule": {
+                            "operand": 104,
+                            "operator": "<",
+                            "property": "continuous3"
+                          },
+                          "predicted_value": "No"
+                        },
+                        {
+                          "confidence": 0.9956110119819641,
+                          "decision_rule": {
+                            "operand": 104,
+                            "operator": ">=",
+                            "property": "continuous3"
+                          },
+                          "predicted_value": "No"
+                        }
+                      ],
+                      "decision_rule": {
+                        "operand": "yes",
+                        "operator": "is",
+                        "property": "enum3"
+                      }
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": 32,
+                    "operator": "<",
+                    "property": "continuous4"
+                  }
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "confidence": 0.7048512101173401,
+                              "decision_rule": {
+                                "operand": "titi",
+                                "operator": "is",
+                                "property": "enum1"
+                              },
+                              "predicted_value": "No"
+                            },
+                            {
+                              "confidence": 0.8630361557006836,
+                              "decision_rule": {
+                                "operand": "toto",
+                                "operator": "is",
+                                "property": "enum1"
+                              },
+                              "predicted_value": "No"
+                            }
+                          ],
+                          "decision_rule": {
+                            "operand": "good",
+                            "operator": "is",
+                            "property": "enum5"
+                          }
+                        },
+                        {
+                          "confidence": 0.6774609088897705,
+                          "decision_rule": {
+                            "operand": "bad",
+                            "operator": "is",
+                            "property": "enum5"
+                          },
+                          "predicted_value": "yes"
+                        }
+                      ],
+                      "decision_rule": {
+                        "operand": "ko",
+                        "operator": "is",
+                        "property": "enum2"
+                      }
+                    },
+                    {
+                      "confidence": 0.9618390202522278,
+                      "decision_rule": {
+                        "operand": "ok",
+                        "operator": "is",
+                        "property": "enum2"
+                      },
+                      "predicted_value": "No"
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": 32,
+                    "operator": ">=",
+                    "property": "continuous4"
+                  }
+                }
+              ],
+              "decision_rule": {
+                "operand": 2,
+                "operator": "<",
+                "property": "continuous5"
+              }
+            },
+            {
+              "children": [
+                {
+                  "confidence": 0.9264835119247437,
+                  "decision_rule": {
+                    "operand": 212,
+                    "operator": "<",
+                    "property": "continuous3"
+                  },
+                  "predicted_value": "No"
+                },
+                {
+                  "confidence": 0.6774609088897705,
+                  "decision_rule": {
+                    "operand": 212,
+                    "operator": ">=",
+                    "property": "continuous3"
+                  },
+                  "predicted_value": "yes"
+                }
+              ],
+              "decision_rule": {
+                "operand": 2,
+                "operator": ">=",
+                "property": "continuous5"
+              }
+            }
+          ],
+          "decision_rule": {
+            "operand": "INCONNU",
+            "operator": "is",
+            "property": "enum4"
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "confidence": 0.9940770268440247,
+                              "decision_rule": {
+                                "operand": "good",
+                                "operator": "is",
+                                "property": "enum6"
+                              },
+                              "predicted_value": "No"
+                            },
+                            {
+                              "confidence": 0.9984665513038635,
+                              "decision_rule": {
+                                "operand": "bad",
+                                "operator": "is",
+                                "property": "enum6"
+                              },
+                              "predicted_value": "No"
+                            },
+                            {
+                              "confidence": 0.9976829290390015,
+                              "decision_rule": {
+                                "operand": "average",
+                                "operator": "is",
+                                "property": "enum6"
+                              },
+                              "predicted_value": "No"
+                            },
+                            {
+                              "confidence": 0.9983553290367126,
+                              "decision_rule": {
+                                "operand": "no_applicable",
+                                "operator": "is",
+                                "property": "enum6"
+                              },
+                              "predicted_value": "No"
+                            }
+                          ],
+                          "decision_rule": {
+                            "operand": 263,
+                            "operator": "<",
+                            "property": "continuous3"
+                          }
+                        },
+                        {
+                          "children": [
+                            {
+                              "confidence": 0.9905678033828735,
+                              "decision_rule": {
+                                "operand": 33,
+                                "operator": "<",
+                                "property": "continuous4"
+                              },
+                              "predicted_value": "No"
+                            },
+                            {
+                              "confidence": 0.5797058939933777,
+                              "decision_rule": {
+                                "operand": 33,
+                                "operator": ">=",
+                                "property": "continuous4"
+                              },
+                              "predicted_value": "No"
+                            }
+                          ],
+                          "decision_rule": {
+                            "operand": 263,
+                            "operator": ">=",
+                            "property": "continuous3"
+                          }
+                        }
+                      ],
+                      "decision_rule": {
+                        "operand": 271,
+                        "operator": "<",
+                        "property": "continuous3"
+                      }
+                    },
+                    {
+                      "children": [
+                        {
+                          "confidence": 0.8077218532562256,
+                          "decision_rule": {
+                            "operand": "good",
+                            "operator": "is",
+                            "property": "enum5"
+                          },
+                          "predicted_value": "No"
+                        },
+                        {
+                          "confidence": 0.6774609088897705,
+                          "decision_rule": {
+                            "operand": "bad",
+                            "operator": "is",
+                            "property": "enum5"
+                          },
+                          "predicted_value": "No"
+                        },
+                        {
+                          "confidence": 0.6774609088897705,
+                          "decision_rule": {
+                            "operand": "average",
+                            "operator": "is",
+                            "property": "enum5"
+                          },
+                          "predicted_value": "yes"
+                        }
+                      ],
+                      "decision_rule": {
+                        "operand": 271,
+                        "operator": ">=",
+                        "property": "continuous3"
+                      }
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": 272,
+                    "operator": "<",
+                    "property": "continuous3"
+                  }
+                },
+                {
+                  "confidence": 0.9988229274749756,
+                  "decision_rule": {
+                    "operand": 272,
+                    "operator": ">=",
+                    "property": "continuous3"
+                  },
+                  "predicted_value": "No"
+                }
+              ],
+              "decision_rule": {
+                "operand": 396,
+                "operator": "<",
+                "property": "continuous3"
+              }
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "confidence": 0.6774609088897705,
+                      "decision_rule": {
+                        "operand": "good",
+                        "operator": "is",
+                        "property": "enum5"
+                      },
+                      "predicted_value": "yes"
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "confidence": 0.6774609088897705,
+                              "decision_rule": {
+                                "operand": "good",
+                                "operator": "is",
+                                "property": "enum7"
+                              },
+                              "predicted_value": "yes"
+                            },
+                            {
+                              "confidence": 0.28075236082077026,
+                              "decision_rule": {
+                                "operand": "average",
+                                "operator": "is",
+                                "property": "enum7"
+                              },
+                              "predicted_value": "yes"
+                            }
+                          ],
+                          "decision_rule": {
+                            "operand": "no",
+                            "operator": "is",
+                            "property": "enum3"
+                          }
+                        },
+                        {
+                          "confidence": 0.6774609088897705,
+                          "decision_rule": {
+                            "operand": "yes",
+                            "operator": "is",
+                            "property": "enum3"
+                          },
+                          "predicted_value": "yes"
+                        }
+                      ],
+                      "decision_rule": {
+                        "operand": "bad",
+                        "operator": "is",
+                        "property": "enum5"
+                      }
+                    },
+                    {
+                      "confidence": 0.6774609088897705,
+                      "decision_rule": {
+                        "operand": "average",
+                        "operator": "is",
+                        "property": "enum5"
+                      },
+                      "predicted_value": "No"
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": 400,
+                    "operator": "<",
+                    "property": "continuous3"
+                  }
+                },
+                {
+                  "confidence": 0.9954861998558044,
+                  "decision_rule": {
+                    "operand": 400,
+                    "operator": ">=",
+                    "property": "continuous3"
+                  },
+                  "predicted_value": "No"
+                }
+              ],
+              "decision_rule": {
+                "operand": 396,
+                "operator": ">=",
+                "property": "continuous3"
+              }
+            }
+          ],
+          "decision_rule": {
+            "operand": "No",
+            "operator": "is",
+            "property": "enum4"
+          }
+        }
+      ]
+    }
+  }
+}

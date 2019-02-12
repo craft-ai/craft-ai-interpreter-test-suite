@@ -1,0 +1,44 @@
+{
+  "_version": "2.0.0",
+  "configuration": {
+    "time_quantum": 60,
+    "learning_period": 900000,
+    "tree_max_depth": 1,
+    "context": {
+      "tz": { "type": "timezone" },
+      "lightbulbColor": { "type": "enum" }
+    },
+    "output": ["lightbulbColor"]
+  },
+  "trees": {
+    "lightbulbColor": {
+      "output_values": ["#ffffff", "#fff345"],
+      "children": [
+        {
+          "prediction": {
+            "confidence": 0.9921274781227112,
+            "value": "#ffffff",
+            "distribution": [20, 2]
+          },
+          "decision_rule": {
+            "operand": "-01:00",
+            "operator": "is",
+            "property": "tz"
+          }
+        },
+        {
+          "prediction": {
+            "confidence": 0.6774609088897705,
+            "value": "#fff345",
+            "distribution": [2, 10]
+          },
+          "decision_rule": {
+            "operand": "-02:00",
+            "operator": "is",
+            "property": "tz"
+          }
+        }
+      ]
+    }
+  }
+}

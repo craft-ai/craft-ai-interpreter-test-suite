@@ -1,0 +1,20 @@
+[
+  {
+    "title": "fails if a property of the given context contains an unexpected value",
+    "context": {
+      "test": "no"
+    },
+    "error": {
+      "message": "Unable to take decision: value 'no' for property 'test' doesn't validate any of the decision rules.",
+      "metadata": {
+        "decision_rules": [],
+        "expected_values": [
+          "false",
+          "true"
+        ],
+        "property": "test",
+        "value": "no"
+      }
+    }
+  }
+]

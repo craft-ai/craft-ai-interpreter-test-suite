@@ -1,0 +1,17 @@
+[
+  {
+    "title": "succeeds with an empty context",
+    "context": {},
+    "output": {
+      "_version": "1.1.0",
+      "context": {},
+      "output": {
+        "value": {
+          "predicted_value": "#ffffff",
+          "confidence": 0.99,
+          "decision_rules": []
+        }
+      }
+    }
+  }
+]

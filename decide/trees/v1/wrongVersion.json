@@ -1,0 +1,39 @@
+{
+  "_version": "a_bad_version",
+  "configuration": {
+    "context": {
+      "position": {
+        "type": "enum"
+      },
+      "test": {
+        "type": "continuous"
+      }
+    },
+    "output": ["position"],
+    "deactivate_missing_values": true
+  },
+  "trees": {
+    "position": {
+      "children": [
+        {
+          "decision_rule": {
+            "operator": "<",
+            "operand": 6,
+            "property": "test"
+          },
+          "predicted_value": "Down",
+          "confidence": 0.9973324159369238
+        },
+        {
+          "decision_rule": {
+            "operator": ">=",
+            "operand": 6,
+            "property": "test"
+          },
+          "predicted_value": "Up",
+          "confidence": 0.3
+        }
+      ]
+    }
+  }
+}
