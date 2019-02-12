@@ -48,7 +48,9 @@
                       "prediction": {
                         "confidence": 0.7077222466468811,
                         "value": 15.980855,
-                        "standard_deviation": 6.3621416  
+                        "distribution": {
+                          "standard_deviation": 6.3621416  
+                        }
                       },
                       "decision_rule": {
                         "operand": 6.1499996,
@@ -60,7 +62,9 @@
                       "prediction": {
                         "confidence": 0.7267184853553772,
                         "value": 21.592722,
-                        "standard_deviation": 7.8522334  
+                        "distribution": {
+                          "standard_deviation": 7.8522334  
+                        }
                       },
                       "decision_rule": {
                         "operand": 6.1499996,
@@ -84,7 +88,9 @@
                       "prediction": {
                         "confidence": 0.8106237053871155,
                         "value": 17.346033,
-                        "standard_deviation": 3.7179956
+                        "distribution": {
+                          "standard_deviation": 3.7179956
+                        }
                       },
                       "decision_rule": {
                         "operand": 2.28,
@@ -96,7 +102,9 @@
                       "prediction": {
                         "confidence": 0.7755794525146484,
                         "value": 14.340629,
-                        "standard_deviation": 3.9589624
+                        "distribution": {
+                          "standard_deviation": 3.9589624
+                        }
                       },
                       "decision_rule": {
                         "operand": 2.28,
@@ -132,7 +140,9 @@
                       "prediction": {
                         "confidence": 0.819686770439148,
                         "value": 18.189474,
-                        "standard_deviation": 3.7130969
+                        "distribution": {
+                          "standard_deviation": 3.7130969
+                        }
                       },
                       "decision_rule": {
                         "operand": [
@@ -147,7 +157,9 @@
                       "prediction": {
                         "confidence": 0.7979375720024109,
                         "value": 21.746876,
-                        "standard_deviation": 5.2957106
+                        "distribution": {
+                          "standard_deviation": 5.2957106
+                        }
                       },
                       "decision_rule": {
                         "operand": [
@@ -171,7 +183,9 @@
                       "prediction": {
                         "confidence": 0.8156102895736694,
                         "value": 30.65,
-                        "standard_deviation": 5.71699
+                        "distribution": {
+                          "standard_deviation": 5.71699
+                        }
                       },
                       "decision_rule": {
                         "operand": 86.5,
@@ -183,7 +197,9 @@
                       "prediction": {
                         "confidence": 0.8070890307426453,
                         "value": 23.87647,
-                        "standard_deviation": 4.8617277
+                        "distribution": {
+                          "standard_deviation": 4.8617277
+                        }
                       },
                       "decision_rule": {
                         "operand": 86.5,
@@ -225,7 +241,9 @@
                       "prediction": {
                         "confidence": 0.9163457751274108,
                         "value": 16.411537,
-                        "standard_deviation": 0.83490247
+                        "distribution": {
+                          "standard_deviation": 0.83490247
+                        }
                       },
                       "decision_rule": {
                         "operand": 85,
@@ -237,7 +255,9 @@
                       "prediction": {
                         "confidence": 0.7478266358375549,
                         "value": 19.866667,
-                        "standard_deviation": 0.05773552
+                        "distribution": {
+                          "standard_deviation": 0.05773552
+                        }
                       },
                       "decision_rule": {
                         "operand": 85,
@@ -258,7 +278,9 @@
                       "prediction": {
                         "confidence": 0.8372429013252258,
                         "value": 29.683817,
-                        "standard_deviation": 5.2565985
+                        "distribution": {
+                          "standard_deviation": 5.2565985
+                        }
                       },
                       "decision_rule": {
                         "operand": [
@@ -273,7 +295,9 @@
                       "prediction": {
                         "confidence": 0.8101604580879211,
                         "value": 21.967922,
-                        "standard_deviation": 4.6454597
+                        "distribution": {
+                          "standard_deviation": 4.6454597
+                        }
                       },
                       "decision_rule": {
                         "operand": [
@@ -306,7 +330,9 @@
                       "prediction": {
                         "confidence": 0.7549400925636292,
                         "value": 18.758614,
-                        "standard_deviation": 5.2609425
+                        "distribution": {
+                          "standard_deviation": 5.2609425
+                        }
                       },
                       "decision_rule": {
                         "operand": [
@@ -321,7 +347,9 @@
                       "prediction": {
                         "confidence": 0.8633171319961548,
                         "value": 30.223812,
-                        "standard_deviation": 4.238106
+                        "distribution": {
+                          "standard_deviation": 4.238106
+                        }
                       },
                       "decision_rule": {
                         "operand": [
@@ -345,7 +373,9 @@
                       "prediction": {
                         "confidence": 0.8937285542488098,
                         "value": 30.6496,
-                        "standard_deviation": 3.507849
+                        "distribution": {
+                          "standard_deviation": 3.507849
+                        }
                       },
                       "decision_rule": {
                         "operand": 13.85,
@@ -357,7 +387,9 @@
                       "prediction": {
                         "confidence": 0.953538179397583,
                         "value": 32.790287,
-                        "standard_deviation": 1.4698939
+                        "distribution": {
+                          "standard_deviation": 1.4698939
+                        }
                       },
                       "decision_rule": {
                         "operand": 13.85,

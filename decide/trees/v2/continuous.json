@@ -13,7 +13,9 @@
                       "prediction": {
                         "confidence": 0.9838709831237793,
                         "value": 0.52,
-                        "standard_deviation": 0
+                        "distribution": {
+                          "standard_deviation": 0
+                        }
                       },
                       "decision_rule": {
                         "operand": [
@@ -28,7 +30,9 @@
                       "prediction": {
                         "confidence": 0.8571428656578064,
                         "value": 0,
-                        "standard_deviation": 0
+                        "distribution": {
+                          "standard_deviation": 0
+                        }
                       },
                       "decision_rule": {
                         "operand": [
@@ -52,7 +56,9 @@
                       "prediction": {
                         "confidence": 0.8547552824020386,
                         "value": 0.6847388,
-                        "standard_deviation": 0.11337655  
+                        "distribution": {
+                          "standard_deviation": 0.11337655
+                        }
                       },
                       "decision_rule": {
                         "operand": [
@@ -67,7 +73,9 @@
                       "prediction": {
                         "confidence": 0.7180213332176208,
                         "value": 0.5879104,
-                        "standard_deviation": 0.22783813  
+                        "distribution": {
+                          "standard_deviation": 0.22783813
+                        }
                       },
                       "decision_rule": {
                         "operand": [
@@ -103,7 +111,9 @@
                       "prediction": {
                         "confidence": 0.9411764740943909,
                         "value": 0.98,
-                        "standard_deviation": 0
+                        "distribution": {
+                          "standard_deviation": 0
+                        }
                       },
                       "decision_rule": {
                         "operand": [
@@ -118,7 +128,10 @@
                       "prediction": {
                         "confidence": 0.75,
                         "value": 0,
-                        "standard_deviation": 0  
+                        "distribution": {
+                          "standard_deviation": 0
+                        }
+                    
                       },
                       "decision_rule": {
                         "operand": [
@@ -142,7 +155,9 @@
                       "prediction": {
                         "confidence": 0.9846153855323792,
                         "value": 0,
-                        "standard_deviation": 0  
+                        "distribution": {
+                          "standard_deviation": 0
+                        }  
                       },
                       "decision_rule": {
                         "operand": [
@@ -157,7 +172,9 @@
                       "prediction": {
                         "confidence": 0.5253270268440247,
                         "value": 0.2857068,
-                        "standard_deviation": 0.2553252  
+                        "distribution": {
+                          "standard_deviation": 0.2553252
+                        }
                       },
                       "decision_rule": {
                         "operand": [
@@ -205,7 +222,9 @@
                       "prediction": {
                         "confidence": 0.4893883168697357,
                         "value": 0.335,
-                        "standard_deviation": 0.33792585  
+                        "distribution": {
+                          "standard_deviation": 0.33792585
+                        }
                       },
                       "decision_rule": {
                         "operand": [
@@ -220,7 +239,9 @@
                       "prediction": {
                         "confidence": 0.9896907210350037,
                         "value": 0,
-                        "standard_deviation": 0  
+                        "distribution": {
+                          "standard_deviation": 0
+                        }  
                       },
                       "decision_rule": {
                         "operand": [
@@ -247,7 +268,9 @@
                       "prediction": {
                         "confidence": 0.9830508232116699,
                         "value": 0,
-                        "standard_deviation": 0  
+                        "distribution": {
+                          "standard_deviation": 0
+                        }  
                       },
                       "decision_rule": {
                         "operand": [
@@ -262,7 +285,9 @@
                       "prediction": {
                         "confidence": 0.4935499131679535,
                         "value": 0.335,
-                        "standard_deviation": 0.33675855  
+                        "distribution": {
+                          "standard_deviation": 0.33675855
+                        }  
                       },
                       "decision_rule": {
                         "operand": [
@@ -301,7 +326,9 @@
                       "prediction": {
                         "confidence": 0.4972785711288452,
                         "value": 0.29416668,
-                        "standard_deviation": 0.2518823  
+                        "distribution": {
+                          "standard_deviation": 0.2518823 
+                        } 
                       },
                       "decision_rule": {
                         "operand": [
@@ -316,7 +343,9 @@
                       "prediction" : {
                         "confidence": 0.9375,
                         "value": 0,
-                        "standard_deviation": 0  
+                        "distribution": {
+                          "standard_deviation": 0
+                        }  
                       },
                       "decision_rule": {
                         "operand": [
@@ -343,7 +372,9 @@
                       "prediction": {
                         "confidence": 0.9983922839164734,
                         "value": 0,
-                        "standard_deviation": 0  
+                        "distribution": {
+                          "standard_deviation": 0
+                        }  
                       },
                       "decision_rule": {
                         "operand": [
@@ -358,7 +389,9 @@
                       "prediction": {
                         "confidence": 0.2651505470275879,
                         "value": 0.065000005,
-                        "standard_deviation": 0.17416467  
+                        "distribution": {
+                          "standard_deviation": 0.17416467
+                        }
                       },
                       "decision_rule": {
                         "operand": [
