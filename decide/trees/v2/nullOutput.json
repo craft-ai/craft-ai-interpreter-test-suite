@@ -18,7 +18,11 @@
         {
           "prediction": {
             "value": 18.1,
-            "confidence": 0.9973324159369238
+            "confidence": 0.9973324159369238,
+            "distribution": {
+              "standard_deviation": 1.0
+            },
+            "nb_samples": 4
           },
           "decision_rule": {
             "operator": "is",
@@ -29,7 +33,11 @@
         {
           "prediction": {
             "value": null,
-            "confidence": 0.0
+            "confidence": 0.0,
+            "distribution": {
+              "standard_deviation": 0.0
+            },
+            "nb_samples": 4
           },
           "decision_rule": {
             "operator": "is",

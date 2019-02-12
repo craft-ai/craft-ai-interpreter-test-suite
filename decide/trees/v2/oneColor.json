@@ -13,7 +13,9 @@
     "value": {
       "prediction": {
         "value": "#ffffff",
-        "confidence": 0.99
+        "confidence": 0.99,
+        "distribution": [1.0],
+        "nb_samples": 1
       },
       "output_values": ["#ffffff"]
     }

@@ -20,7 +20,8 @@
           "prediction": {
             "value": "Down",
             "confidence": 0.9973324159369238,
-            "distribution": [10, 1]
+            "distribution": [0.9, 0.1],
+            "nb_samples": 4
           },
           "decision_rule": {
             "operator": "is",
@@ -32,7 +33,8 @@
           "prediction": {
             "value": "Up",
             "confidence": 0.3,
-            "distribution": [2, 3]
+            "distribution": [0.3, 0.7],
+            "nb_samples": 4
           },
           "decision_rule": {
             "operator": "is",

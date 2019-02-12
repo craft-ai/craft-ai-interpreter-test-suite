@@ -50,7 +50,8 @@
                         "value": 15.980855,
                         "distribution": {
                           "standard_deviation": 6.3621416  
-                        }
+                        },
+                        "nb_samples": 4
                       },
                       "decision_rule": {
                         "operand": 6.1499996,
@@ -64,7 +65,8 @@
                         "value": 21.592722,
                         "distribution": {
                           "standard_deviation": 7.8522334  
-                        }
+                        },
+                        "nb_samples": 4
                       },
                       "decision_rule": {
                         "operand": 6.1499996,
@@ -90,7 +92,8 @@
                         "value": 17.346033,
                         "distribution": {
                           "standard_deviation": 3.7179956
-                        }
+                        },
+                        "nb_samples": 4
                       },
                       "decision_rule": {
                         "operand": 2.28,
@@ -104,7 +107,8 @@
                         "value": 14.340629,
                         "distribution": {
                           "standard_deviation": 3.9589624
-                        }
+                        },
+                        "nb_samples": 4
                       },
                       "decision_rule": {
                         "operand": 2.28,
@@ -142,7 +146,8 @@
                         "value": 18.189474,
                         "distribution": {
                           "standard_deviation": 3.7130969
-                        }
+                        },
+                        "nb_samples": 4
                       },
                       "decision_rule": {
                         "operand": [
@@ -159,7 +164,8 @@
                         "value": 21.746876,
                         "distribution": {
                           "standard_deviation": 5.2957106
-                        }
+                        },
+                        "nb_samples": 4
                       },
                       "decision_rule": {
                         "operand": [
@@ -185,7 +191,8 @@
                         "value": 30.65,
                         "distribution": {
                           "standard_deviation": 5.71699
-                        }
+                        },
+                        "nb_samples": 4
                       },
                       "decision_rule": {
                         "operand": 86.5,
@@ -199,7 +206,8 @@
                         "value": 23.87647,
                         "distribution": {
                           "standard_deviation": 4.8617277
-                        }
+                        },
+                        "nb_samples": 4
                       },
                       "decision_rule": {
                         "operand": 86.5,
@@ -243,7 +251,8 @@
                         "value": 16.411537,
                         "distribution": {
                           "standard_deviation": 0.83490247
-                        }
+                        },
+                        "nb_samples": 4
                       },
                       "decision_rule": {
                         "operand": 85,
@@ -257,7 +266,8 @@
                         "value": 19.866667,
                         "distribution": {
                           "standard_deviation": 0.05773552
-                        }
+                        },
+                        "nb_samples": 4
                       },
                       "decision_rule": {
                         "operand": 85,
@@ -280,7 +290,8 @@
                         "value": 29.683817,
                         "distribution": {
                           "standard_deviation": 5.2565985
-                        }
+                        },
+                        "nb_samples": 4
                       },
                       "decision_rule": {
                         "operand": [
@@ -297,7 +308,8 @@
                         "value": 21.967922,
                         "distribution": {
                           "standard_deviation": 4.6454597
-                        }
+                        },
+                        "nb_samples": 4
                       },
                       "decision_rule": {
                         "operand": [
@@ -332,7 +344,8 @@
                         "value": 18.758614,
                         "distribution": {
                           "standard_deviation": 5.2609425
-                        }
+                        },
+                        "nb_samples": 4
                       },
                       "decision_rule": {
                         "operand": [
@@ -349,7 +362,8 @@
                         "value": 30.223812,
                         "distribution": {
                           "standard_deviation": 4.238106
-                        }
+                        },
+                        "nb_samples": 4
                       },
                       "decision_rule": {
                         "operand": [
@@ -375,7 +389,8 @@
                         "value": 30.6496,
                         "distribution": {
                           "standard_deviation": 3.507849
-                        }
+                        },
+                        "nb_samples": 4
                       },
                       "decision_rule": {
                         "operand": 13.85,
@@ -389,7 +404,8 @@
                         "value": 32.790287,
                         "distribution": {
                           "standard_deviation": 1.4698939
-                        }
+                        },
+                        "nb_samples": 4
                       },
                       "decision_rule": {
                         "operand": 13.85,

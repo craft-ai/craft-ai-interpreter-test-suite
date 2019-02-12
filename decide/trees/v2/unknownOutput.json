@@ -71,7 +71,9 @@
                         {
                           "prediction": {
                             "confidence": 0.6774609088897705,
-                            "value": "No"
+                            "value": "No",
+                            "distribution": [0.9, 0.1],
+                            "nb_samples": 12
                           },
                           "decision_rule": {
                             "operand": 38,
@@ -242,7 +244,9 @@
                         {
                           "prediction": {
                             "confidence": 0.9711036086082458,
-                            "value": "No"
+                            "value": "No",
+                            "distribution": [0.9, 0.1],
+                            "nb_samples": 12
                           },            
                           "decision_rule": {
                             "operand": 7,
@@ -266,7 +270,9 @@
                             {
                               "prediction": {
                                 "confidence": 0.8630361557006836,
-                                "value": "No"
+                                "value": "No",
+                                "distribution": [0.9, 0.1],
+                                "nb_samples": 12
                               },            
                               "decision_rule": {
                                 "operand": 264,
@@ -293,7 +299,9 @@
                         {
                           "prediction": {
                             "confidence": 0.6774609088897705,
-                            "value": "No"
+                            "value": "No",
+                            "distribution": [0.9, 0.1],
+                            "nb_samples": 12
                           },            
                           "decision_rule": {
                             "operand": 104,
@@ -304,7 +312,9 @@
                         {
                           "prediction": {
                             "confidence": 0.9956110119819641,
-                            "value": "No"
+                            "value": "No",
+                            "distribution": [0.9, 0.1],
+                            "nb_samples": 12
                           },            
                           "decision_rule": {
                             "operand": 104,
@@ -335,7 +345,9 @@
                             {
                               "prediction": {
                                 "confidence": 0.7048512101173401,
-                                "value": "No"
+                                "value": "No",
+                                "distribution": [0.9, 0.1],
+                                "nb_samples": 12
                               },                
                               "decision_rule": {
                                 "operand": "titi",
@@ -346,7 +358,9 @@
                             {
                               "prediction": {
                                 "confidence": 0.8630361557006836,
-                                "value": "No"
+                                "value": "No",
+                                "distribution": [0.9, 0.1],
+                                "nb_samples": 12
                               },                
                               "decision_rule": {
                                 "operand": "toto",
@@ -455,7 +469,9 @@
                             {
                               "prediction": {
                                 "confidence": 0.9940770268440247,
-                                "value": "No"
+                                "value": "No",
+                                "distribution": [0.9, 0.1],
+                                "nb_samples": 12
                               },            
                               "decision_rule": {
                                 "operand": "good",
@@ -466,7 +482,9 @@
                             {
                               "prediction": {
                                 "confidence": 0.9984665513038635,
-                                "value": "No"
+                                "value": "No",
+                                "distribution": [0.9, 0.1],
+                                "nb_samples": 12
                               },
                               "decision_rule": {
                                 "operand": "bad",
@@ -477,7 +495,9 @@
                             {
                               "prediction": {
                                 "confidence": 0.9976829290390015,
-                                "value": "No"
+                                "value": "No",
+                                "distribution": [0.9, 0.1],
+                                "nb_samples": 12
                               },
                               "decision_rule": {
                                 "operand": "average",
@@ -488,7 +508,9 @@
                             {
                               "prediction": {
                                 "confidence": 0.9983553290367126,
-                                "value": "No"
+                                "value": "No",
+                                "distribution": [0.9, 0.1],
+                                "nb_samples": 12
                               },
                               "decision_rule": {
                                 "operand": "no_applicable",
@@ -508,7 +530,9 @@
                             {
                               "prediction": {
                                 "confidence": 0.9905678033828735,
-                                "value": "No"
+                                "value": "No",
+                                "distribution": [0.9, 0.1],
+                                "nb_samples": 12
                               },
                               "decision_rule": {
                                 "operand": 33,
@@ -519,7 +543,9 @@
                             {
                               "prediction": {
                                 "confidence": 0.5797058939933777,
-                                "value": "No"
+                                "value": "No",
+                                "distribution": [0.9, 0.1],
+                                "nb_samples": 12
                               },
                               "decision_rule": {
                                 "operand": 33,
@@ -546,7 +572,9 @@
                         {
                           "prediction": {
                             "confidence": 0.8077218532562256,
-                            "value": "No"
+                            "value": "No",
+                            "distribution": [0.9, 0.1],
+                            "nb_samples": 12
                           },
                           "decision_rule": {
                             "operand": "good",
@@ -557,7 +585,9 @@
                         {
                           "prediction": {
                             "confidence": 0.6774609088897705,
-                            "value": "No"
+                            "value": "No",
+                            "distribution": [0.9, 0.1],
+                            "nb_samples": 12
                           },
                           "decision_rule": {
                             "operand": "bad",

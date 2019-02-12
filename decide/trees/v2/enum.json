@@ -30,7 +30,8 @@
           "prediction": {
             "confidence": 0.6774609088897705,
             "value": "false",
-            "distribution": [5, 0, 1] 
+            "distribution": [0.9, 0.0, 0.1],
+            "nb_samples": 20 
           },
           "decision_rule": {
             "operator": "[in[",
@@ -47,7 +48,8 @@
               "prediction": {
                 "confidence": 0.8077218532562256,
                 "value": "not interested",
-                "distribution": [1, 0, 5] 
+                "distribution": [0.1, 0, 0.9],
+                "nb_samples": 20 
               },
               "decision_rule": {
                 "operator": "[in[",
@@ -62,7 +64,8 @@
               "prediction": {
                 "confidence": 0.6774609088897705,
                 "value": "true",
-                "distribution": [1, 5, 3]
+                "distribution": [0.1, 0.6, 0.3],
+                "nb_samples": 10 
               },
               "decision_rule": {
                 "operator": "[in[",
