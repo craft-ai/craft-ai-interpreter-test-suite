@@ -40,26 +40,48 @@
             ],
             "property": "category"
           },
-          "children": {
-            "decision_rule": {
-              "operator": "[in[",
-              "operand": [
-                14.116667,
-                14.2
-              ],
-              "property": "timeOfDay"
+          "children": [
+            {
+              "decision_rule": {
+                "operator": "[in[",
+                "operand": [
+                  14.116667,
+                  14.2
+                ],
+                "property": "timeOfDay"
+              },
+              "prediction": {
+                "confidence": 0.6774609088897705,
+                "value": "true",
+                "distribution": [
+                  0.1,
+                  0.6,
+                  0.3
+                ],
+                "nb_samples": 10
+              }
             },
-            "prediction": {
-              "confidence": 0.6774609088897705,
-              "value": "true",
-              "distribution": [
-                0.1,
-                0.6,
-                0.3
-              ],
-              "nb_samples": 10
+            {
+              "decision_rule": {
+                "operator": "[in[",
+                "operand": [
+                  14.2,
+                  15.0
+                ],
+                "property": "timeOfDay"
+              },
+              "prediction": {
+                "confidence": 0.9630500003402000,
+                "value": "not interested",
+                "distribution": [
+                  0.05,
+                  0.0,
+                  0.95
+                ],
+                "nb_samples": 15
+              }
             }
-          }
+          ]
         },
         {
           "decision_rule": {

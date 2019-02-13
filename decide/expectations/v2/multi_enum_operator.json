@@ -30,5 +30,107 @@
         }
       }
     }
+  },
+  {
+    "title": "should be 'true' for 'a' at '14.12' ",
+    "context": {
+      "timeOfDay": 14.12,
+      "category": "a",
+      "tz": "+00:00"
+    },
+    "output": {
+      "_version": "2.0.0",
+      "context": {
+        "timeOfDay": 14.12,
+        "category": "a",
+        "tz": "+00:00"
+      },
+      "output": {
+        "open": {
+          "predicted_value": "true",
+          "confidence": 0.6774609088897705,
+          "decision_rules": [
+            {
+              "operator": "in",
+              "operand": [
+                "a",
+                "b",
+                "c"
+              ],
+              "property": "category"
+            },
+            {
+              "operator": "[in[",
+              "operand": [
+                14.116667,
+                14.2
+              ],
+              "property": "timeOfDay"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "title": "should be 'not interested' for 'c' at '14.4' ",
+    "context": {
+      "timeOfDay": 14.4,
+      "category": "c",
+      "tz": "+00:00"
+    },
+    "output": {
+      "_version": "2.0.0",
+      "context": {
+        "timeOfDay": 14.4,
+        "category": "c",
+        "tz": "+00:00"
+      },
+      "output": {
+        "open": {
+          "predicted_value": "not interested",
+          "confidence": 0.9630500003402000,
+          "decision_rules": [
+            {
+              "operator": "in",
+              "operand": [
+                "a",
+                "b",
+                "c"
+              ],
+              "property": "category"
+            },
+            {
+              "operator": "[in[",
+              "operand": [
+                14.2,
+                15.0
+              ],
+              "property": "timeOfDay"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "title": "fails if one property of the given context has an invalid 'category' value - must be in ['a', 'b', 'c', 'd', 'e']",
+    "context": {
+      "timeOfDay": 14.15,
+      "category": "f",
+      "tz": "+00:00"
+    },
+    "error": {
+      "message": "Unable to take decision: value 'f' for property 'category' doesn't validate any of the decision rules.",
+      "metadata": {
+        "badProperties": [
+          {
+            "property": "category",
+            "type": "enum",
+            "value": "f"
+          }
+        ]
+      }
+    }
   }
 ]
