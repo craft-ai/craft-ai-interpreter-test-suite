@@ -123,13 +123,20 @@
     "error": {
       "message": "Unable to take decision: value 'f' for property 'category' doesn't validate any of the decision rules.",
       "metadata": {
-        "badProperties": [
-          {
-            "property": "category",
-            "type": "enum",
-            "value": "f"
-          }
-        ]
+        "decision_rules": [],
+        "expected_values": [
+              [
+                "a",
+                "b",
+                "c"
+              ],
+              [
+                "d",
+                "e"
+              ]
+        ],
+        "property": "category",
+        "value": "f"
       }
     }
   }
