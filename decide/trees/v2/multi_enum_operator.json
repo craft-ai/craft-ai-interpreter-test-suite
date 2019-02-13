@@ -1,0 +1,87 @@
+{
+  "_version": "2.0.0",
+  "configuration": {
+    "context": {
+      "category": {
+        "type": "enum"
+      },
+      "timeOfDay": {
+        "type": "time_of_day",
+        "is_generated": true
+      },
+      "tz": {
+        "type": "timezone"
+      },
+      "open": {
+        "type": "enum"
+      }
+    },
+    "output": [
+      "open"
+    ],
+    "time_quantum": 300,
+    "deactivate_missing_values": true
+  },
+  "trees": {
+    "open": {
+      "output_values": [
+        "false",
+        "true",
+        "not interested"
+      ],
+      "children": [
+        {
+          "decision_rule": {
+            "operator": "in",
+            "operand": [
+              "a",
+              "b",
+              "c"
+            ],
+            "property": "category"
+          },
+          "children": {
+            "decision_rule": {
+              "operator": "[in[",
+              "operand": [
+                14.116667,
+                14.2
+              ],
+              "property": "timeOfDay"
+            },
+            "prediction": {
+              "confidence": 0.6774609088897705,
+              "value": "true",
+              "distribution": [
+                0.1,
+                0.6,
+                0.3
+              ],
+              "nb_samples": 10
+            }
+          }
+        },
+        {
+          "decision_rule": {
+            "operator": "in",
+            "operand": [
+              "d",
+              "e"
+            ],
+            "property": "category"
+          },
+          "prediction": {
+            "confidence": 0.6774609088897705,
+            "value": "false",
+            "distribution": [
+              0.9,
+              0.0,
+              0.1
+            ],
+            "nb_samples": 20
+          }
+        }
+      ]
+    }
+  }
+}
