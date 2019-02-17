@@ -1,0 +1,455 @@
+{
+  "_version": "2.0.0",
+  "configuration": {
+    "time_quantum": 3600,
+    "learning_period": 54000000,
+    "context": {
+      "tz": {
+        "type": "timezone"
+      },
+      "time": {
+        "type": "time_of_day",
+        "is_generated": true
+      },
+      "p": {
+        "type": "continuous"
+      },
+      "dir": {
+        "type": "periodic"
+      },
+      "it": {
+        "type": "continuous"
+      },
+      "norm": {
+        "type": "continuous"
+      },
+      "ot": {
+        "type": "continuous"
+      },
+      "oh": {
+        "type": "continuous"
+      }
+    },
+    "output": [
+      "it"
+    ],
+    "deactivate_missing_values": true
+  },
+  "trees": {
+    "it": {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "prediction": {
+                        "confidence": 0.7077222466468811,
+                        "value": 15.980855,
+                        "distribution": {
+                          "standard_deviation": 6.3621416  
+                        },
+                        "nb_samples": 4
+                      },
+                      "decision_rule": {
+                        "operand": 6.1499996,
+                        "operator": "<",
+                        "property": "ot"
+                      }
+                    },
+                    {
+                      "prediction": {
+                        "confidence": 0.7267184853553772,
+                        "value": 21.592722,
+                        "distribution": {
+                          "standard_deviation": 7.8522334  
+                        },
+                        "nb_samples": 4
+                      },
+                      "decision_rule": {
+                        "operand": 6.1499996,
+                        "operator": ">=",
+                        "property": "ot"
+                      }
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": [
+                      1,
+                      12
+                    ],
+                    "operator": "[in[",
+                    "property": "time"
+                  }
+                },
+                {
+                  "children": [
+                    {
+                      "prediction": {
+                        "confidence": 0.8106237053871155,
+                        "value": 17.346033,
+                        "distribution": {
+                          "standard_deviation": 3.7179956
+                        },
+                        "nb_samples": 4
+                      },
+                      "decision_rule": {
+                        "operand": 2.28,
+                        "operator": "<",
+                        "property": "norm"
+                      }
+                    },
+                    {
+                      "prediction": {
+                        "confidence": 0.7755794525146484,
+                        "value": 14.340629,
+                        "distribution": {
+                          "standard_deviation": 3.9589624
+                        },
+                        "nb_samples": 4
+                      },
+                      "decision_rule": {
+                        "operand": 2.28,
+                        "operator": ">=",
+                        "property": "norm"
+                      }
+                    },
+                    {
+                      "prediction": {
+                        "confidence": 0.59692200,
+                        "value": 23.0,
+                        "distribution": {
+                          "standard_deviation": 5.6069302  
+                        },
+                        "nb_samples": 1
+                      },
+                      "decision_rule": {
+                        "operand": null,
+                        "operator": "is",
+                        "property": "norm"
+                      }
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": [
+                      12,
+                      1
+                    ],
+                    "operator": "[in[",
+                    "property": "time"
+                  }
+                }
+              ],
+              "decision_rule": {
+                "operand": [
+                  159.004,
+                  300
+                ],
+                "operator": "[in[",
+                "property": "dir"
+              }
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "prediction": {
+                        "confidence": 0.819686770439148,
+                        "value": 18.189474,
+                        "distribution": {
+                          "standard_deviation": 3.7130969
+                        },
+                        "nb_samples": 4
+                      },
+                      "decision_rule": {
+                        "operand": [
+                          8,
+                          19
+                        ],
+                        "operator": "[in[",
+                        "property": "time"
+                      }
+                    },
+                    {
+                      "prediction": {
+                        "confidence": 0.7979375720024109,
+                        "value": 21.746876,
+                        "distribution": {
+                          "standard_deviation": 5.2957106
+                        },
+                        "nb_samples": 4
+                      },
+                      "decision_rule": {
+                        "operand": [
+                          19,
+                          8
+                        ],
+                        "operator": "[in[",
+                        "property": "time"
+                      }
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": 1026.5,
+                    "operator": "<",
+                    "property": "p"
+                  }
+                },
+                {
+                  "children": [
+                    {
+                      "prediction": {
+                        "confidence": 0.8156102895736694,
+                        "value": 30.65,
+                        "distribution": {
+                          "standard_deviation": 5.71699
+                        },
+                        "nb_samples": 4
+                      },
+                      "decision_rule": {
+                        "operand": 86.5,
+                        "operator": "<",
+                        "property": "oh"
+                      }
+                    },
+                    {
+                      "prediction": {
+                        "confidence": 0.8070890307426453,
+                        "value": 23.87647,
+                        "distribution": {
+                          "standard_deviation": 4.8617277
+                        },
+                        "nb_samples": 4
+                      },
+                      "decision_rule": {
+                        "operand": 86.5,
+                        "operator": ">=",
+                        "property": "oh"
+                      }
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": 1026.5,
+                    "operator": ">=",
+                    "property": "p"
+                  }
+                }
+              ],
+              "decision_rule": {
+                "operand": [
+                  300,
+                  159.004
+                ],
+                "operator": "[in[",
+                "property": "dir"
+              }
+            }
+          ],
+          "decision_rule": {
+            "operand": 9.75,
+            "operator": "<",
+            "property": "ot"
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "prediction": {
+                        "confidence": 0.9163457751274108,
+                        "value": 16.411537,
+                        "distribution": {
+                          "standard_deviation": 0.83490247
+                        },
+                        "nb_samples": 4
+                      },
+                      "decision_rule": {
+                        "operand": 85,
+                        "operator": "<",
+                        "property": "oh"
+                      }
+                    },
+                    {
+                      "prediction": {
+                        "confidence": 0.7478266358375549,
+                        "value": 19.866667,
+                        "distribution": {
+                          "standard_deviation": 0.05773552
+                        },
+                        "nb_samples": 4
+                      },
+                      "decision_rule": {
+                        "operand": 85,
+                        "operator": ">=",
+                        "property": "oh"
+                      }
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": 1006.5,
+                    "operator": "<",
+                    "property": "p"
+                  }
+                },
+                {
+                  "children": [
+                    {
+                      "prediction": {
+                        "confidence": 0.8372429013252258,
+                        "value": 29.683817,
+                        "distribution": {
+                          "standard_deviation": 5.2565985
+                        },
+                        "nb_samples": 4
+                      },
+                      "decision_rule": {
+                        "operand": [
+                          90,
+                          200
+                        ],
+                        "operator": "[in[",
+                        "property": "dir"
+                      }
+                    },
+                    {
+                      "prediction": {
+                        "confidence": 0.8101604580879211,
+                        "value": 21.967922,
+                        "distribution": {
+                          "standard_deviation": 4.6454597
+                        },
+                        "nb_samples": 4
+                      },
+                      "decision_rule": {
+                        "operand": [
+                          200,
+                          90
+                        ],
+                        "operator": "[in[",
+                        "property": "dir"
+                      }
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": 1006.5,
+                    "operator": ">=",
+                    "property": "p"
+                  }
+                }
+              ],
+              "decision_rule": {
+                "operand": 1012.5,
+                "operator": "<",
+                "property": "p"
+              }
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "prediction": {
+                        "confidence": 0.7549400925636292,
+                        "value": 18.758614,
+                        "distribution": {
+                          "standard_deviation": 5.2609425
+                        },
+                        "nb_samples": 4
+                      },
+                      "decision_rule": {
+                        "operand": [
+                          13,
+                          19
+                        ],
+                        "operator": "[in[",
+                        "property": "time"
+                      }
+                    },
+                    {
+                      "prediction": {
+                        "confidence": 0.8633171319961548,
+                        "value": 30.223812,
+                        "distribution": {
+                          "standard_deviation": 4.238106
+                        },
+                        "nb_samples": 4
+                      },
+                      "decision_rule": {
+                        "operand": [
+                          19,
+                          13
+                        ],
+                        "operator": "[in[",
+                        "property": "time"
+                      }
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": 10.65,
+                    "operator": "<",
+                    "property": "ot"
+                  }
+                },
+                {
+                  "children": [
+                    {
+                      "prediction": {
+                        "confidence": 0.8937285542488098,
+                        "value": 30.6496,
+                        "distribution": {
+                          "standard_deviation": 3.507849
+                        },
+                        "nb_samples": 4
+                      },
+                      "decision_rule": {
+                        "operand": 13.85,
+                        "operator": "<",
+                        "property": "ot"
+                      }
+                    },
+                    {
+                      "prediction": {
+                        "confidence": 0.953538179397583,
+                        "value": 32.790287,
+                        "distribution": {
+                          "standard_deviation": 1.4698939
+                        },
+                        "nb_samples": 4
+                      },
+                      "decision_rule": {
+                        "operand": 13.85,
+                        "operator": ">=",
+                        "property": "ot"
+                      }
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": 10.65,
+                    "operator": ">=",
+                    "property": "ot"
+                  }
+                }
+              ],
+              "decision_rule": {
+                "operand": 1012.5,
+                "operator": ">=",
+                "property": "p"
+              }
+            }
+          ],
+          "decision_rule": {
+            "operand": 9.75,
+            "operator": ">=",
+            "property": "ot"
+          }
+        }
+      ]
+    }
+  }
+}
