@@ -1,0 +1,31 @@
+[
+  {
+    "title": "if time of day is optional use the optional branch",
+    "context": {
+      "timeOfDay": {},
+      "category": "international",
+      "tz": "+00:00"
+    },
+    "output": {
+      "_version": "2.0.0",
+      "context": {
+        "timeOfDay": {},
+        "category": "international",
+        "tz": "+00:00"
+      },
+      "output": {
+        "open": {
+          "predicted_value": "not interested",
+          "confidence": 0.8077218532562256,
+          "decision_rules": [
+            {
+              "operator": "is",
+              "property": "timeOfDay",
+              "operand": {}
+            }
+          ]
+        }
+      }
+    }
+  }
+]
