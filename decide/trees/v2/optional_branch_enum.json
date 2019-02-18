@@ -142,7 +142,9 @@
                         {
                           "prediction": {
                             "confidence": 0.9882375001907349,
-                            "value": "yes"
+                            "value": "yes",
+                            "distribution": [0.1, 0.9],
+                            "nb_samples": 12
                           },
                           "decision_rule": {
                             "operand": 1000000,
@@ -204,7 +206,9 @@
                     {
                       "prediction": {
                         "confidence": 0.6774609088897705,
-                        "value": "yes"
+                        "value": "yes",
+                        "distribution": [0.1, 0.9],
+                        "nb_samples": 12
                       },
                       "decision_rule": {
                         "operand": "good",
@@ -215,7 +219,9 @@
                     {
                       "prediction": {
                         "confidence": 0.6774609088897705,
-                        "value": "No"
+                        "value": "No",
+                        "distribution": [0.9, 0.1],
+                        "nb_samples": 12    
                       },
                       "decision_rule": {
                         "operand": "average",
@@ -240,7 +246,9 @@
             {
               "prediction": {
                 "confidence": 0.6774609088897705,
-                "value": "No"
+                "value": "No",
+                "distribution": [0.9, 0.1],
+                "nb_samples": 12
               },
               "decision_rule": {
                 "operand": 430,
@@ -402,7 +410,9 @@
                         {
                           "prediction": {
                             "confidence": 0.6774609088897705,
-                            "value": "yes"
+                            "value": "yes",
+                            "distribution": [0.1, 0.9],
+                            "nb_samples": 12
                           },
                           "decision_rule": {
                             "operand": "bad",
@@ -420,7 +430,9 @@
                     {
                       "prediction": {
                         "confidence": 0.9618390202522278,
-                        "value": "No"
+                        "value": "No",
+                        "distribution": [0.9, 0.1],
+                        "nb_samples": 12    
                       },
                       "decision_rule": {
                         "operand": "ok",
@@ -447,7 +459,9 @@
                 {
                   "prediction": {
                     "confidence": 0.9264835119247437,
-                    "value": "No"
+                    "value": "No",
+                    "distribution": [0.9, 0.1],
+                    "nb_samples": 12
                   },
                   "decision_rule": {
                     "operand": 212,
@@ -458,7 +472,9 @@
                 {
                   "prediction": {
                     "confidence": 0.6774609088897705,
-                    "value": "yes"
+                    "value": "yes",
+                    "distribution": [0.1, 0.9],
+                    "nb_samples": 12
                   },
                   "decision_rule": {
                     "operand": 212,
@@ -622,7 +638,9 @@
                         {
                           "prediction": {
                             "confidence": 0.6774609088897705,
-                            "value": "yes"
+                            "value": "yes",
+                            "distribution": [0.1, 0.9],
+                            "nb_samples": 12
                           },
                           "decision_rule": {
                             "operand": "average",
@@ -647,7 +665,9 @@
                 {
                   "prediction": {
                     "confidence": 0.9988229274749756,
-                    "value": "No"
+                    "value": "No",
+                    "distribution": [0.9, 0.1],
+                    "nb_samples": 12
                   },
                   "decision_rule": {
                     "operand": 272,
@@ -669,7 +689,9 @@
                     {
                       "prediction": {
                         "confidence": 0.6774609088897705,
-                        "value": "yes"
+                        "value": "yes",
+                        "distribution": [0.1, 0.9],
+                        "nb_samples": 12
                       },
                       "decision_rule": {
                         "operand": "good",
@@ -717,7 +739,9 @@
                         {
                           "prediction": {
                             "confidence": 0.6774609088897705,
-                            "value": "yes"
+                            "value": "yes",
+                            "distribution": [0.1, 0.9],
+                            "nb_samples": 12
                           },
                           "decision_rule": {
                             "operand": "yes",
@@ -735,7 +759,9 @@
                     {
                       "prediction": {
                         "confidence": 0.6774609088897705,
-                        "value": "No"
+                        "value": "No",
+                        "distribution": [0.9, 0.1],
+                        "nb_samples": 12    
                       },
                       "decision_rule": {
                         "operand": "average",
@@ -753,7 +779,9 @@
                 {
                   "prediction": {
                     "confidence": 0.9954861998558044,
-                    "value": "No"
+                    "value": "No",
+                    "distribution": [0.9, 0.1],
+                    "nb_samples": 12
                   },
                   "decision_rule": {
                     "operand": 400,
