@@ -168,7 +168,8 @@
               "property": "time"
             }
           ],
-          "standard_deviation": 0.17416467
+          "standard_deviation": 0.17416467,
+          "nb_samples": 4
         }
       }
     }
@@ -222,7 +223,8 @@
               "operator": "[in[",
               "property": "day"
             }
-          ]
+          ],
+          "nb_samples": 4
         }
       }
     }
@@ -276,7 +278,8 @@
               "operator": "[in[",
               "property": "day"
             }
-          ]
+          ],
+          "nb_samples": 4
         }
       }
     }
@@ -311,7 +314,8 @@
               "operator": "[in[",
               "property": "time"
             }
-          ]
+          ],
+          "nb_samples": 32
         }
       }
     }

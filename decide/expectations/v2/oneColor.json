@@ -9,7 +9,9 @@
         "value": {
           "predicted_value": "#ffffff",
           "confidence": 0.99,
-          "decision_rules": []
+          "decision_rules": [],
+          "distribution": [1.0],
+          "nb_samples": 1
         }
       }
     }

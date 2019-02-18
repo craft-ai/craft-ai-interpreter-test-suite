@@ -68,7 +68,9 @@
               "operator": "is",
               "property": "enum2"
             }
-          ]
+          ],
+          "distribution": [0.9, 0.1],
+          "nb_samples": 12
         }
       }
     }

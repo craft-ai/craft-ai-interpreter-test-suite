@@ -53,7 +53,8 @@
             }
           ],
           "predicted_value": 18.189474,
-          "standard_deviation": 3.7130969
+          "standard_deviation": 3.7130969,
+          "nb_samples": 4
         }
       }
     }
@@ -93,7 +94,8 @@
               "property": "ot"
             }
           ],
-          "predicted_value": 20.465382375
+          "predicted_value": 20.465382375,
+          "nb_samples": 32
         }
       }
     }
