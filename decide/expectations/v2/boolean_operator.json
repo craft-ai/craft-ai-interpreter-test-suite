@@ -1,0 +1,125 @@
+[
+  {
+    "title": "should be 'off' for not present",
+    "context": {
+      "timeOfDay": 14.15,
+      "presence": false,
+      "tz": "+00:00"
+    },
+    "output": {
+      "_version": "2.0.0",
+      "context": {
+        "timeOfDay": 14.15,
+        "presence": false,
+        "tz": "+00:00"
+      },
+      "output": {
+        "state": {
+          "predicted_value": "off",
+          "confidence": 0.6774609088897705,
+          "decision_rules": [
+            {
+              "operator": "is",
+              "operand": false,
+              "property": "presence"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "title": "should be 'on' for present at '14.12' ",
+    "context": {
+      "timeOfDay": 14.12,
+      "presence": true,
+      "tz": "+00:00"
+    },
+    "output": {
+      "_version": "2.0.0",
+      "context": {
+        "timeOfDay": 14.12,
+        "presence": true,
+        "tz": "+00:00"
+      },
+      "output": {
+        "state": {
+          "predicted_value": "on",
+          "confidence": 0.6774609088897705,
+          "decision_rules": [
+            {
+              "operator": "is",
+              "operand": true,
+              "property": "presence"
+            },
+            {
+              "operator": "[in[",
+              "operand": [
+                14.116667,
+                14.2
+              ],
+              "property": "timeOfDay"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "title": "should be 'off' if present at '14.4' ",
+    "context": {
+      "timeOfDay": 14.4,
+      "presence": true,
+      "tz": "+00:00"
+    },
+    "output": {
+      "_version": "2.0.0",
+      "context": {
+        "timeOfDay": 14.4,
+        "presence": true,
+        "tz": "+00:00"
+      },
+      "output": {
+        "state": {
+          "predicted_value": "off",
+          "confidence": 0.9630500003402000,
+          "decision_rules": [
+            {
+              "operator": "is",
+              "operand": true,
+              "property": "presence"
+            },
+            {
+              "operator": "[in[",
+              "operand": [
+                14.2,
+                15.0
+              ],
+              "property": "timeOfDay"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "title": "fails if one property of the given context has an invalid 'presence' value - must be a boolean",
+    "context": {
+      "timeOfDay": 14.15,
+      "presence": "f",
+      "tz": "+00:00"
+    },
+    "error": {
+      "message": "Unable to take decision, the given context is not valid: 'f' is not a valid value for property 'presence' of type 'boolean'.",
+      "metadata": {
+        "badProperties": [
+          {
+            "property": "presence",
+            "type": "boolean",
+            "value": "f"
+          }
+        ]
+      }
+    }
+  }
+]

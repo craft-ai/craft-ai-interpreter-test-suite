@@ -1,0 +1,98 @@
+{
+  "_version": "2.0.0",
+  "configuration": {
+    "context": {
+      "presence": {
+        "type": "boolean"
+      },
+      "timeOfDay": {
+        "type": "time_of_day",
+        "is_generated": true
+      },
+      "tz": {
+        "type": "timezone"
+      },
+      "state": {
+        "type": "enum"
+      }
+    },
+    "output": [
+      "state"
+    ],
+    "time_quantum": 300,
+    "deactivate_missing_values": true
+  },
+  "trees": {
+    "state": {
+      "output_values": [
+        "on",
+        "off"
+      ],
+      "children": [
+        {
+          "decision_rule": {
+            "operator": "is",
+            "operand": true,
+            "property": "presence"
+          },
+          "children": [
+            {
+              "decision_rule": {
+                "operator": "[in[",
+                "operand": [
+                  14.116667,
+                  14.2
+                ],
+                "property": "timeOfDay"
+              },
+              "prediction": {
+                "confidence": 0.6774609088897705,
+                "value": "on",
+                "distribution": [
+                  0.7,
+                  0.3
+                ],
+                "nb_samples": 10
+              }
+            },
+            {
+              "decision_rule": {
+                "operator": "[in[",
+                "operand": [
+                  14.2,
+                  15.0
+                ],
+                "property": "timeOfDay"
+              },
+              "prediction": {
+                "confidence": 0.9630500003402000,
+                "value": "off",
+                "distribution": [
+                  0.05,
+                  0.95
+                ],
+                "nb_samples": 15
+              }
+            }
+          ]
+        },
+        {
+          "decision_rule": {
+            "operator": "is",
+            "operand": false,
+            "property": "presence"
+          },
+          "prediction": {
+            "confidence": 0.6774609088897705,
+            "value": "off",
+            "distribution": [
+              0.0,
+              1.0
+            ],
+            "nb_samples": 20
+          }
+        }
+      ]
+    }
+  }
+}
