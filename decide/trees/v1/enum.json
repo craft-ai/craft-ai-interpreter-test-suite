@@ -1,0 +1,79 @@
+{
+  "_version": "1.1.0",
+  "configuration": {
+    "context": {
+      "category": {
+        "type": "enum"
+      },
+      "timeOfDay": {
+        "type": "time_of_day",
+        "is_generated": true
+      },
+      "tz": {
+        "type": "timezone"
+      },
+      "open": {
+        "type": "enum"
+      }
+    },
+    "output": [
+      "open"
+    ],
+    "time_quantum": 300,
+    "deactivate_missing_values": true
+  },
+  "trees": {
+    "open": {
+      "children": [
+        {
+          "confidence": 0.6774609088897705,
+          "decision_rule": {
+            "operator": "[in[",
+            "operand": [
+              14.116667,
+              14.2
+            ],
+            "property": "timeOfDay"
+          },
+          "predicted_value": "false"
+        },
+        {
+          "children": [
+            {
+              "confidence": 0.8077218532562256,
+              "decision_rule": {
+                "operator": "[in[",
+                "operand": [
+                  14.2,
+                  14.366667
+                ],
+                "property": "timeOfDay"
+              },
+              "predicted_value": "not interested"
+            },
+            {
+              "confidence": 0.6774609088897705,
+              "decision_rule": {
+                "operator": "[in[",
+                "operand": [
+                  14.366667,
+                  14.116667
+                ],
+                "property": "timeOfDay"
+              },
+              "predicted_value": "true"
+            }
+          ],
+          "decision_rule": {
+            "operator": "[in[",
+            "operand": [
+              14.2,
+              14.116667
+            ],
+            "property": "timeOfDay"
+          }
+        }
+      ]
+    }
+  }
+}

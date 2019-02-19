@@ -1,5 +1,5 @@
 {
-  "_version": "1.1.0",
+  "_version": "2.0.0",
   "configuration": {
     "context": {
       "category": {
@@ -19,13 +19,20 @@
     "output": [
       "open"
     ],
-    "time_quantum": 300
+    "time_quantum": 300,
+    "deactivate_missing_values": true
   },
   "trees": {
     "open": {
+      "output_values": ["false", "true", "not interested"],
       "children": [
         {
-          "confidence": 0.6774609088897705,
+          "prediction": {
+            "confidence": 0.6774609088897705,
+            "value": "false",
+            "distribution": [0.9, 0.0, 0.1],
+            "nb_samples": 20 
+          },
           "decision_rule": {
             "operator": "[in[",
             "operand": [
@@ -33,13 +40,17 @@
               14.2
             ],
             "property": "timeOfDay"
-          },
-          "predicted_value": "false"
+          }
         },
         {
           "children": [
             {
-              "confidence": 0.8077218532562256,
+              "prediction": {
+                "confidence": 0.8077218532562256,
+                "value": "not interested",
+                "distribution": [0.1, 0, 0.9],
+                "nb_samples": 20 
+              },
               "decision_rule": {
                 "operator": "[in[",
                 "operand": [
@@ -47,11 +58,15 @@
                   14.366667
                 ],
                 "property": "timeOfDay"
-              },
-              "predicted_value": "not interested"
+              }
             },
             {
-              "confidence": 0.6774609088897705,
+              "prediction": {
+                "confidence": 0.6774609088897705,
+                "value": "true",
+                "distribution": [0.1, 0.6, 0.3],
+                "nb_samples": 10 
+              },
               "decision_rule": {
                 "operator": "[in[",
                 "operand": [
@@ -59,8 +74,7 @@
                   14.116667
                 ],
                 "property": "timeOfDay"
-              },
-              "predicted_value": "true"
+              }
             }
           ],
           "decision_rule": {

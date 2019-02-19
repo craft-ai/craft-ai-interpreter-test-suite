@@ -1,5 +1,5 @@
 {
-  "_version": "1.1.0",
+  "_version": "2.0.0",
   "configuration": {
     "time_quantum": 86400,
     "deactivate_sampling": true,
@@ -27,7 +27,8 @@
         "type": "enum"
       },
       "enum2": {
-        "type": "enum"
+        "type": "enum",
+        "is_optional": true
       },
       "continuous5": {
         "type": "continuous"
@@ -53,10 +54,12 @@
     },
     "output": [
       "IndicateurCraft"
-    ]
+    ],
+    "deactivate_missing_values": true
   },
   "trees": {
     "IndicateurCraft": {
+      "output_values": ["No", "yes"],
       "children": [
         {
           "children": [
@@ -67,33 +70,58 @@
                     {
                       "children": [
                         {
-                          "confidence": 0.6774609088897705,
+                          "prediction": {
+                            "confidence": 0.6774609088897705,
+                            "value": "No",
+                            "distribution": [0.9, 0.1],
+                            "nb_samples": 12
+                          },
                           "decision_rule": {
                             "operand": 38,
                             "operator": "<",
                             "property": "continuous3"
-                          },
-                          "predicted_value": "No"
+                          }
                         },
                         {
                           "children": [
                             {
-                              "confidence": 0.8636752367019653,
+                              "prediction": {
+                                "confidence": 0.8636752367019653,
+                                "value": "yes",
+                                "distribution": [0.1, 0.9],
+                                "nb_samples": 12
+                              },
                               "decision_rule": {
                                 "operand": "ko",
                                 "operator": "is",
                                 "property": "enum2"
-                              },
-                              "predicted_value": "yes"
+                              }
                             },
                             {
-                              "confidence": 0.33693182468414307,
+                              "prediction": {
+                                "confidence": 0.33693182468414307,
+                                "value": "yes",
+                                "distribution": [0.1, 0.9],
+                                "nb_samples": 12
+                              },
                               "decision_rule": {
                                 "operand": "ok",
                                 "operator": "is",
                                 "property": "enum2"
+                              }
+                            },
+                            {
+                              "prediction": {
+                                "confidence": 0.6570797079,
+                                "value": "No",
+                                "distribution": [0.9, 0.1],
+                                "nb_samples": 12
                               },
-                              "predicted_value": "yes"
+                              "decision_rule": {
+                                "operand": {},
+                                "operator": "is",
+                                "property": "enum2"
+                              }
                             }
                           ],
                           "decision_rule": {
@@ -112,33 +140,45 @@
                     {
                       "children": [
                         {
-                          "confidence": 0.9882375001907349,
+                          "prediction": {
+                            "confidence": 0.9882375001907349,
+                            "value": "yes",
+                            "distribution": [0.1, 0.9],
+                            "nb_samples": 12
+                          },
                           "decision_rule": {
                             "operand": 1000000,
                             "operator": "<",
                             "property": "continuous6"
-                          },
-                          "predicted_value": "yes"
+                          }
                         },
                         {
                           "children": [
                             {
-                              "confidence": 0.8630361557006836,
+                              "prediction": {
+                                "confidence": 0.8630361557006836,
+                                "value": "yes",
+                                "distribution": [0.1, 0.9],
+                                "nb_samples": 12
+                              },
                               "decision_rule": {
                                 "operand": 1,
                                 "operator": "<",
                                 "property": "continuous1"
-                              },
-                              "predicted_value": "yes"
+                              }
                             },
                             {
-                              "confidence": 0.4678919315338135,
+                              "prediction": {
+                                "confidence": 0.4678919315338135,
+                                "value": "yes",
+                                "distribution": [0.1, 0.9],
+                                "nb_samples": 12
+                              },
                               "decision_rule": {
                                 "operand": 1,
                                 "operator": ">=",
                                 "property": "continuous1"
-                              },
-                              "predicted_value": "yes"
+                              }
                             }
                           ],
                           "decision_rule": {
@@ -164,22 +204,30 @@
                 {
                   "children": [
                     {
-                      "confidence": 0.6774609088897705,
+                      "prediction": {
+                        "confidence": 0.6774609088897705,
+                        "value": "yes",
+                        "distribution": [0.1, 0.9],
+                        "nb_samples": 12
+                      },
                       "decision_rule": {
                         "operand": "good",
                         "operator": "is",
                         "property": "enum6"
-                      },
-                      "predicted_value": "yes"
+                      }
                     },
                     {
-                      "confidence": 0.6774609088897705,
+                      "prediction": {
+                        "confidence": 0.6774609088897705,
+                        "value": "No",
+                        "distribution": [0.9, 0.1],
+                        "nb_samples": 12    
+                      },
                       "decision_rule": {
                         "operand": "average",
                         "operator": "is",
                         "property": "enum6"
-                      },
-                      "predicted_value": "No"
+                      }
                     }
                   ],
                   "decision_rule": {
@@ -196,13 +244,17 @@
               }
             },
             {
-              "confidence": 0.6774609088897705,
+              "prediction": {
+                "confidence": 0.6774609088897705,
+                "value": "No",
+                "distribution": [0.9, 0.1],
+                "nb_samples": 12
+              },
               "decision_rule": {
                 "operand": 430,
                 "operator": ">=",
                 "property": "continuous3"
-              },
-              "predicted_value": "No"
+              }
             }
           ],
           "decision_rule": {
@@ -220,33 +272,45 @@
                     {
                       "children": [
                         {
-                          "confidence": 0.9711036086082458,
+                          "prediction": {
+                            "confidence": 0.9711036086082458,
+                            "value": "No",
+                            "distribution": [0.9, 0.1],
+                            "nb_samples": 12
+                          },            
                           "decision_rule": {
                             "operand": 7,
                             "operator": "<",
                             "property": "continuous2"
-                          },
-                          "predicted_value": "No"
+                          }
                         },
                         {
                           "children": [
                             {
-                              "confidence": 0.28075236082077026,
+                              "prediction": {
+                                "confidence": 0.28075236082077026,
+                                "value": "yes",
+                                "distribution": [0.1, 0.9],
+                                "nb_samples": 12
+                              },            
                               "decision_rule": {
                                 "operand": 264,
                                 "operator": "<",
                                 "property": "continuous3"
-                              },
-                              "predicted_value": "yes"
+                              }
                             },
                             {
-                              "confidence": 0.8630361557006836,
+                              "prediction": {
+                                "confidence": 0.8630361557006836,
+                                "value": "No",
+                                "distribution": [0.9, 0.1],
+                                "nb_samples": 12
+                              },            
                               "decision_rule": {
                                 "operand": 264,
                                 "operator": ">=",
                                 "property": "continuous3"
-                              },
-                              "predicted_value": "No"
+                              }
                             }
                           ],
                           "decision_rule": {
@@ -265,22 +329,30 @@
                     {
                       "children": [
                         {
-                          "confidence": 0.6774609088897705,
+                          "prediction": {
+                            "confidence": 0.6774609088897705,
+                            "value": "No",
+                            "distribution": [0.9, 0.1],
+                            "nb_samples": 12
+                          },            
                           "decision_rule": {
                             "operand": 104,
                             "operator": "<",
                             "property": "continuous3"
-                          },
-                          "predicted_value": "No"
+                          }
                         },
                         {
-                          "confidence": 0.9956110119819641,
+                          "prediction": {
+                            "confidence": 0.9956110119819641,
+                            "value": "No",
+                            "distribution": [0.9, 0.1],
+                            "nb_samples": 12
+                          },            
                           "decision_rule": {
                             "operand": 104,
                             "operator": ">=",
                             "property": "continuous3"
-                          },
-                          "predicted_value": "No"
+                          }
                         }
                       ],
                       "decision_rule": {
@@ -303,22 +375,30 @@
                         {
                           "children": [
                             {
-                              "confidence": 0.7048512101173401,
+                              "prediction": {
+                                "confidence": 0.7048512101173401,
+                                "value": "No",
+                                "distribution": [0.9, 0.1],
+                                "nb_samples": 12
+                              },                
                               "decision_rule": {
                                 "operand": "titi",
                                 "operator": "is",
                                 "property": "enum1"
-                              },
-                              "predicted_value": "No"
+                              }
                             },
                             {
-                              "confidence": 0.8630361557006836,
+                              "prediction": {
+                                "confidence": 0.8630361557006836,
+                                "value": "No",
+                                "distribution": [0.9, 0.1],
+                                "nb_samples": 12
+                              },                
                               "decision_rule": {
                                 "operand": "toto",
                                 "operator": "is",
                                 "property": "enum1"
-                              },
-                              "predicted_value": "No"
+                              }
                             }
                           ],
                           "decision_rule": {
@@ -328,13 +408,17 @@
                           }
                         },
                         {
-                          "confidence": 0.6774609088897705,
+                          "prediction": {
+                            "confidence": 0.6774609088897705,
+                            "value": "yes",
+                            "distribution": [0.1, 0.9],
+                            "nb_samples": 12
+                          },
                           "decision_rule": {
                             "operand": "bad",
                             "operator": "is",
                             "property": "enum5"
-                          },
-                          "predicted_value": "yes"
+                          }
                         }
                       ],
                       "decision_rule": {
@@ -344,13 +428,17 @@
                       }
                     },
                     {
-                      "confidence": 0.9618390202522278,
+                      "prediction": {
+                        "confidence": 0.9618390202522278,
+                        "value": "No",
+                        "distribution": [0.9, 0.1],
+                        "nb_samples": 12    
+                      },
                       "decision_rule": {
                         "operand": "ok",
                         "operator": "is",
                         "property": "enum2"
-                      },
-                      "predicted_value": "No"
+                      }
                     }
                   ],
                   "decision_rule": {
@@ -369,22 +457,30 @@
             {
               "children": [
                 {
-                  "confidence": 0.9264835119247437,
+                  "prediction": {
+                    "confidence": 0.9264835119247437,
+                    "value": "No",
+                    "distribution": [0.9, 0.1],
+                    "nb_samples": 12
+                  },
                   "decision_rule": {
                     "operand": 212,
                     "operator": "<",
                     "property": "continuous3"
-                  },
-                  "predicted_value": "No"
+                  }
                 },
                 {
-                  "confidence": 0.6774609088897705,
+                  "prediction": {
+                    "confidence": 0.6774609088897705,
+                    "value": "yes",
+                    "distribution": [0.1, 0.9],
+                    "nb_samples": 12
+                  },
                   "decision_rule": {
                     "operand": 212,
                     "operator": ">=",
                     "property": "continuous3"
-                  },
-                  "predicted_value": "yes"
+                  }
                 }
               ],
               "decision_rule": {
@@ -411,40 +507,56 @@
                         {
                           "children": [
                             {
-                              "confidence": 0.9940770268440247,
+                              "prediction": {
+                                "confidence": 0.9940770268440247,
+                                "value": "No",
+                                "distribution": [0.9, 0.1],
+                                "nb_samples": 12
+                              },            
                               "decision_rule": {
                                 "operand": "good",
                                 "operator": "is",
                                 "property": "enum6"
-                              },
-                              "predicted_value": "No"
+                              }
                             },
                             {
-                              "confidence": 0.9984665513038635,
+                              "prediction": {
+                                "confidence": 0.9984665513038635,
+                                "value": "No",
+                                "distribution": [0.9, 0.1],
+                                "nb_samples": 12
+                              },
                               "decision_rule": {
                                 "operand": "bad",
                                 "operator": "is",
                                 "property": "enum6"
-                              },
-                              "predicted_value": "No"
+                              }
                             },
                             {
-                              "confidence": 0.9976829290390015,
+                              "prediction": {
+                                "confidence": 0.9976829290390015,
+                                "value": "No",
+                                "distribution": [0.9, 0.1],
+                                "nb_samples": 12
+                              },
                               "decision_rule": {
                                 "operand": "average",
                                 "operator": "is",
                                 "property": "enum6"
-                              },
-                              "predicted_value": "No"
+                              }
                             },
                             {
-                              "confidence": 0.9983553290367126,
+                              "prediction": {
+                                "confidence": 0.9983553290367126,
+                                "value": "No",
+                                "distribution": [0.9, 0.1],
+                                "nb_samples": 12
+                              },
                               "decision_rule": {
                                 "operand": "no_applicable",
                                 "operator": "is",
                                 "property": "enum6"
-                              },
-                              "predicted_value": "No"
+                              }
                             }
                           ],
                           "decision_rule": {
@@ -456,22 +568,30 @@
                         {
                           "children": [
                             {
-                              "confidence": 0.9905678033828735,
+                              "prediction": {
+                                "confidence": 0.9905678033828735,
+                                "value": "No",
+                                "distribution": [0.9, 0.1],
+                                "nb_samples": 12
+                              },
                               "decision_rule": {
                                 "operand": 33,
                                 "operator": "<",
                                 "property": "continuous4"
-                              },
-                              "predicted_value": "No"
+                              }
                             },
                             {
-                              "confidence": 0.5797058939933777,
+                              "prediction": {
+                                "confidence": 0.5797058939933777,
+                                "value": "No",
+                                "distribution": [0.9, 0.1],
+                                "nb_samples": 12
+                              },
                               "decision_rule": {
                                 "operand": 33,
                                 "operator": ">=",
                                 "property": "continuous4"
-                              },
-                              "predicted_value": "No"
+                              }
                             }
                           ],
                           "decision_rule": {
@@ -490,31 +610,43 @@
                     {
                       "children": [
                         {
-                          "confidence": 0.8077218532562256,
+                          "prediction": {
+                            "confidence": 0.8077218532562256,
+                            "value": "No",
+                            "distribution": [0.9, 0.1],
+                            "nb_samples": 12
+                          },
                           "decision_rule": {
                             "operand": "good",
                             "operator": "is",
                             "property": "enum5"
-                          },
-                          "predicted_value": "No"
+                          }
                         },
                         {
-                          "confidence": 0.6774609088897705,
+                          "prediction": {
+                            "confidence": 0.6774609088897705,
+                            "value": "No",
+                            "distribution": [0.9, 0.1],
+                            "nb_samples": 12
+                          },
                           "decision_rule": {
                             "operand": "bad",
                             "operator": "is",
                             "property": "enum5"
-                          },
-                          "predicted_value": "No"
+                          }
                         },
                         {
-                          "confidence": 0.6774609088897705,
+                          "prediction": {
+                            "confidence": 0.6774609088897705,
+                            "value": "yes",
+                            "distribution": [0.1, 0.9],
+                            "nb_samples": 12
+                          },
                           "decision_rule": {
                             "operand": "average",
                             "operator": "is",
                             "property": "enum5"
-                          },
-                          "predicted_value": "yes"
+                          }
                         }
                       ],
                       "decision_rule": {
@@ -531,13 +663,17 @@
                   }
                 },
                 {
-                  "confidence": 0.9988229274749756,
+                  "prediction": {
+                    "confidence": 0.9988229274749756,
+                    "value": "No",
+                    "distribution": [0.9, 0.1],
+                    "nb_samples": 12
+                  },
                   "decision_rule": {
                     "operand": 272,
                     "operator": ">=",
                     "property": "continuous3"
-                  },
-                  "predicted_value": "No"
+                  }
                 }
               ],
               "decision_rule": {
@@ -551,35 +687,47 @@
                 {
                   "children": [
                     {
-                      "confidence": 0.6774609088897705,
+                      "prediction": {
+                        "confidence": 0.6774609088897705,
+                        "value": "yes",
+                        "distribution": [0.1, 0.9],
+                        "nb_samples": 12
+                      },
                       "decision_rule": {
                         "operand": "good",
                         "operator": "is",
                         "property": "enum5"
-                      },
-                      "predicted_value": "yes"
+                      }
                     },
                     {
                       "children": [
                         {
                           "children": [
                             {
-                              "confidence": 0.6774609088897705,
+                              "prediction": {
+                                "confidence": 0.6774609088897705,
+                                "value": "yes",
+                                "distribution": [0.1, 0.9],
+                                "nb_samples": 12
+                              },        
                               "decision_rule": {
                                 "operand": "good",
                                 "operator": "is",
                                 "property": "enum7"
-                              },
-                              "predicted_value": "yes"
+                              }
                             },
                             {
-                              "confidence": 0.28075236082077026,
+                              "prediction": {
+                                "confidence": 0.28075236082077026,
+                                "value": "yes",
+                                "distribution": [0.1, 0.9],
+                                "nb_samples": 12
+                              },
                               "decision_rule": {
                                 "operand": "average",
                                 "operator": "is",
                                 "property": "enum7"
-                              },
-                              "predicted_value": "yes"
+                              }
                             }
                           ],
                           "decision_rule": {
@@ -589,13 +737,17 @@
                           }
                         },
                         {
-                          "confidence": 0.6774609088897705,
+                          "prediction": {
+                            "confidence": 0.6774609088897705,
+                            "value": "yes",
+                            "distribution": [0.1, 0.9],
+                            "nb_samples": 12
+                          },
                           "decision_rule": {
                             "operand": "yes",
                             "operator": "is",
                             "property": "enum3"
-                          },
-                          "predicted_value": "yes"
+                          }
                         }
                       ],
                       "decision_rule": {
@@ -605,13 +757,17 @@
                       }
                     },
                     {
-                      "confidence": 0.6774609088897705,
+                      "prediction": {
+                        "confidence": 0.6774609088897705,
+                        "value": "No",
+                        "distribution": [0.9, 0.1],
+                        "nb_samples": 12    
+                      },
                       "decision_rule": {
                         "operand": "average",
                         "operator": "is",
                         "property": "enum5"
-                      },
-                      "predicted_value": "No"
+                      }
                     }
                   ],
                   "decision_rule": {
@@ -621,13 +777,17 @@
                   }
                 },
                 {
-                  "confidence": 0.9954861998558044,
+                  "prediction": {
+                    "confidence": 0.9954861998558044,
+                    "value": "No",
+                    "distribution": [0.9, 0.1],
+                    "nb_samples": 12
+                  },
                   "decision_rule": {
                     "operand": 400,
                     "operator": ">=",
                     "property": "continuous3"
-                  },
-                  "predicted_value": "No"
+                  }
                 }
               ],
               "decision_rule": {

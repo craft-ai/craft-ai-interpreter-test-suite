@@ -1,0 +1,76 @@
+[
+  {
+    "title": "if enum2 NA/undefined/{}, use the optional branch",
+    "context": {
+      "continuous1": 0,
+      "continuous2": 0,
+      "continuous3": 167,
+      "continuous4": 21,
+      "enum1": "titi",
+      "enum2": {},
+      "continuous5": 0,
+      "enum3": "yes",
+      "continuous6": 1000000,
+      "enum4": "yes",
+      "enum5": "good",
+      "enum6": "non_applicable",
+      "enum7": "average"
+    },
+    "output": {
+      "_version": "2.0.0",
+      "context": {
+        "continuous1": 0,
+        "continuous2": 0,
+        "continuous3": 167,
+        "continuous4": 21,
+        "enum1": "titi",
+        "enum2": {},
+        "continuous5": 0,
+        "enum3": "yes",
+        "continuous6": 1000000,
+        "enum4": "yes",
+        "enum5": "good",
+        "enum6": "non_applicable",
+        "enum7": "average"
+      },
+      "output": {
+        "IndicateurCraft": {
+          "predicted_value": "No",
+          "confidence": 0.6570797079,
+          "decision_rules": [
+            {
+              "operand": "yes",
+              "operator": "is",
+              "property": "enum4"
+            },
+            {
+              "operand": 430,
+              "operator": "<",
+              "property": "continuous3"
+            },
+            {
+              "operand": "titi",
+              "operator": "is",
+              "property": "enum1"
+            },
+            {
+              "operand": 1,
+              "operator": "<",
+              "property": "continuous5"
+            },
+            {
+              "operand": 38,
+              "operator": ">=",
+              "property": "continuous3"
+            },
+            {
+              "operand": {},
+              "operator": "is",
+              "property": "enum2"
+            }
+          ]
+        }
+      }
+    }
+  }
+]

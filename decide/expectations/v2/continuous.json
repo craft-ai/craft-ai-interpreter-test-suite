@@ -1,0 +1,319 @@
+[
+  {
+    "title": "fails if the given context is not complete",
+    "context": {
+      "time": 7.25,
+      "tz": "+02:00"
+    },
+    "error": {
+      "message": "Unable to take decision, the given context is not valid: expected property 'day' is not defined.",
+      "metadata": {
+        "missingProperties": [
+          "day"
+        ]
+      }
+    }
+  },
+  {
+    "title": "fails if one of property of the given context has an invalid 'time_of_day' value",
+    "context": {
+      "day": 2,
+      "time": "not a time",
+      "tz": "+02:00"
+    },
+    "error": {
+      "message": "Unable to take decision, the given context is not valid: 'not a time' is not a valid value for property 'time' of type 'time_of_day'.",
+      "metadata": {
+        "badProperties": [
+          {
+            "property": "time",
+            "type": "time_of_day",
+            "value": "not a time"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "title": "fails if one of property of the given context has an(other) invalid 'time_of_day' value",
+    "context": {
+      "day": 2,
+      "time": -4,
+      "tz": "+02:00"
+    },
+    "error": {
+      "message": "Unable to take decision, the given context is not valid: '-4' is not a valid value for property 'time' of type 'time_of_day'.",
+      "metadata": {
+        "badProperties": [
+          {
+            "property": "time",
+            "type": "time_of_day",
+            "value": -4
+          }
+        ]
+      }
+    }
+  },
+  {
+    "title": "fails if one of property of the given context has an invalid 'timezone' value",
+    "context": {
+      "day": 2,
+      "time": 7.25,
+      "tz": "BAD"
+    },
+    "error": {
+      "message": "Unable to take decision, the given context is not valid: 'BAD' is not a valid value for property 'tz' of type 'timezone'.",
+      "metadata": {
+        "badProperties": [
+          {
+            "property": "tz",
+            "type": "timezone",
+            "value": "BAD"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "title": "fails if one of property of the given context has an invalid 'day_of_week' value",
+    "context": {
+      "day": 2.7,
+      "time": 7.25,
+      "tz": "+02:00"
+    },
+    "error": {
+      "message": "Unable to take decision, the given context is not valid: '2.7' is not a valid value for property 'day' of type 'day_of_week'.",
+      "metadata": {
+        "badProperties": [
+          {
+            "property": "day",
+            "type": "day_of_week",
+            "value": 2.7
+          }
+        ]
+      }
+    }
+  },
+  {
+    "title": "fails if the given context has multiple invalid values",
+    "context": {
+      "day": 7,
+      "time": 7.25
+    },
+    "error": {
+      "message": "Unable to take decision, the given context is not valid: expected property 'tz' is not defined, '7' is not a valid value for property 'day' of type 'day_of_week'.",
+      "metadata": {
+        "badProperties": [
+          {
+            "property": "day",
+            "type": "day_of_week",
+            "value": 7
+          }
+        ],
+        "missingProperties": [
+          "tz"
+        ]
+      }
+    }
+  },
+  {
+    "title": "light intensity should be 0.065000005 on wednesday 7h15",
+    "context": {
+      "time": 7.25,
+      "day": 2,
+      "tz": "+02:00"
+    },
+    "output": {
+      "_version": "2.0.0",
+      "context": {
+        "time": 7.25,
+        "day": 2,
+        "tz": "+02:00"
+      },
+      "output": {
+        "lightIntensity": {
+          "predicted_value": 0.065000005,
+          "confidence": 0.2651505470275879,
+          "decision_rules": [
+            {
+              "operand": [
+                19.166666,
+                8
+              ],
+              "operator": "[in[",
+              "property": "time"
+            },
+            {
+              "operand": [
+                5,
+                3
+              ],
+              "operator": "[in[",
+              "property": "day"
+            },
+            {
+              "operand": [
+                19.666666,
+                8
+              ],
+              "operator": "[in[",
+              "property": "time"
+            },
+            {
+              "operand": [
+                7.1666665,
+                8
+              ],
+              "operator": "[in[",
+              "property": "time"
+            }
+          ],
+          "standard_deviation": 0.17416467
+        }
+      }
+    }
+  },
+  {
+    "title": "light intensity should be 0.6847388 on monday at 13h00",
+    "context": {
+      "time": 13,
+      "day": 0,
+      "tz": "+02:00"
+    },
+    "output": {
+      "_version": "2.0.0",
+      "context": {
+        "time": 13,
+        "day": 0,
+        "tz": "+02:00"
+      },
+      "output": {
+        "lightIntensity": {
+          "predicted_value": 0.6847388,
+          "confidence": 0.8547552824020386,
+          "standard_deviation": 0.11337655,
+          "decision_rules": [
+            {
+              "operand": [
+                8,
+                19.166666
+              ],
+              "operator": "[in[",
+              "property": "time"
+            },
+            {
+              "operand": [
+                0,
+                5
+              ],
+              "operator": "[in[",
+              "property": "day"
+            },
+            {
+              "operand": "+02:00",
+              "operator": "is",
+              "property": "tz"
+            },
+            {
+              "operand": [
+                0,
+                3
+              ],
+              "operator": "[in[",
+              "property": "day"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "title": "light intensity should be 0.6847388 on monday at 13h00",
+    "context": {
+      "time": 13,
+      "day": 0,
+      "tz": "+02:00"
+    },
+    "output": {
+      "_version": "2.0.0",
+      "context": {
+        "time": 13,
+        "day": 0,
+        "tz": "+02:00"
+      },
+      "output": {
+        "lightIntensity": {
+          "predicted_value": 0.6847388,
+          "confidence": 0.8547552824020386,
+          "standard_deviation": 0.11337655,
+          "decision_rules": [
+            {
+              "operand": [
+                8,
+                19.166666
+              ],
+              "operator": "[in[",
+              "property": "time"
+            },
+            {
+              "operand": [
+                0,
+                5
+              ],
+              "operator": "[in[",
+              "property": "day"
+            },
+            {
+              "operand": "+02:00",
+              "operator": "is",
+              "property": "tz"
+            },
+            {
+              "operand": [
+                0,
+                3
+              ],
+              "operator": "[in[",
+              "property": "day"
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "title": "Day attribute is missing and missing values are handled",
+    "configuration": {
+      "deactivate_missing_values": false
+    },
+    "context": {
+      "time": 13,
+      "day": null,
+      "tz": "+02:00"
+    },
+    "output": {
+      "_version": "2.0.0",
+      "context": {
+        "time": 13,
+        "day": null,
+        "tz": "+02:00"
+      },
+      "output": {
+        "lightIntensity": {
+          "predicted_value": 0.3822945,
+          "confidence": null,
+          "decision_rules": [
+            {
+              "operand": [
+                8,
+                19.166666
+              ],
+              "operator": "[in[",
+              "property": "time"
+            }
+          ]
+        }
+      }
+    }
+  }
+]

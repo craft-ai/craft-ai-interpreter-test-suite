@@ -1,36 +1,37 @@
 {
-  "_version": "1.1.0",
+  "_version": "a_bad_version",
   "configuration": {
     "context": {
       "position": {
-        "type": "continuous"
+        "type": "enum"
       },
       "test": {
-        "type": "enum"
+        "type": "continuous"
       }
     },
-    "output": ["position"]
+    "output": ["position"],
+    "deactivate_missing_values": true
   },
   "trees": {
     "position": {
       "children": [
         {
           "decision_rule": {
-            "operator": "is",
-            "operand": "false",
+            "operator": "<",
+            "operand": 6,
             "property": "test"
           },
-          "predicted_value": 18.1,
+          "predicted_value": "Down",
           "confidence": 0.9973324159369238
         },
         {
           "decision_rule": {
-            "operator": "is",
-            "operand": "true",
+            "operator": ">=",
+            "operand": 6,
             "property": "test"
           },
-          "predicted_value": null,
-          "confidence": 0.0
+          "predicted_value": "Up",
+          "confidence": 0.3
         }
       ]
     }

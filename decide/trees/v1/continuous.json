@@ -1,0 +1,400 @@
+{
+  "_version": "1.1.0",
+  "trees": {
+    "lightIntensity": {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "confidence": 0.9838709831237793,
+                      "decision_rule": {
+                        "operand": [
+                          8,
+                          18.166666
+                        ],
+                        "operator": "[in[",
+                        "property": "time"
+                      },
+                      "predicted_value": 0.52,
+                      "standard_deviation": 0
+                    },
+                    {
+                      "confidence": 0.8571428656578064,
+                      "decision_rule": {
+                        "operand": [
+                          18.166666,
+                          19.166666
+                        ],
+                        "operator": "[in[",
+                        "property": "time"
+                      },
+                      "predicted_value": 0,
+                      "standard_deviation": 0
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": "+01:00",
+                    "operator": "is",
+                    "property": "tz"
+                  }
+                },
+                {
+                  "children": [
+                    {
+                      "confidence": 0.8547552824020386,
+                      "decision_rule": {
+                        "operand": [
+                          0,
+                          3
+                        ],
+                        "operator": "[in[",
+                        "property": "day"
+                      },
+                      "predicted_value": 0.6847388,
+                      "standard_deviation": 0.11337655
+                    },
+                    {
+                      "confidence": 0.7180213332176208,
+                      "decision_rule": {
+                        "operand": [
+                          3,
+                          5
+                        ],
+                        "operator": "[in[",
+                        "property": "day"
+                      },
+                      "predicted_value": 0.5879104,
+                      "standard_deviation": 0.22783813
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": "+02:00",
+                    "operator": "is",
+                    "property": "tz"
+                  }
+                }
+              ],
+              "decision_rule": {
+                "operand": [
+                  0,
+                  5
+                ],
+                "operator": "[in[",
+                "property": "day"
+              }
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "confidence": 0.9411764740943909,
+                      "decision_rule": {
+                        "operand": [
+                          8,
+                          18.666666
+                        ],
+                        "operator": "[in[",
+                        "property": "time"
+                      },
+                      "predicted_value": 0.98,
+                      "standard_deviation": 0
+                    },
+                    {
+                      "confidence": 0.75,
+                      "decision_rule": {
+                        "operand": [
+                          18.666666,
+                          19.166666
+                        ],
+                        "operator": "[in[",
+                        "property": "time"
+                      },
+                      "predicted_value": 0,
+                      "standard_deviation": 0
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": "+01:00",
+                    "operator": "is",
+                    "property": "tz"
+                  }
+                },
+                {
+                  "children": [
+                    {
+                      "confidence": 0.9846153855323792,
+                      "decision_rule": {
+                        "operand": [
+                          8,
+                          10.666667
+                        ],
+                        "operator": "[in[",
+                        "property": "time"
+                      },
+                      "predicted_value": 0,
+                      "standard_deviation": 0
+                    },
+                    {
+                      "confidence": 0.5253270268440247,
+                      "decision_rule": {
+                        "operand": [
+                          10.666667,
+                          19.166666
+                        ],
+                        "operator": "[in[",
+                        "property": "time"
+                      },
+                      "predicted_value": 0.2857068,
+                      "standard_deviation": 0.2553252
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": "+02:00",
+                    "operator": "is",
+                    "property": "tz"
+                  }
+                }
+              ],
+              "decision_rule": {
+                "operand": [
+                  5,
+                  0
+                ],
+                "operator": "[in[",
+                "property": "day"
+              }
+            }
+          ],
+          "decision_rule": {
+            "operand": [
+              8,
+              19.166666
+            ],
+            "operator": "[in[",
+            "property": "time"
+          }
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "confidence": 0.4893883168697357,
+                      "decision_rule": {
+                        "operand": [
+                          19.166666,
+                          0
+                        ],
+                        "operator": "[in[",
+                        "property": "time"
+                      },
+                      "predicted_value": 0.335,
+                      "standard_deviation": 0.33792585
+                    },
+                    {
+                      "confidence": 0.9896907210350037,
+                      "decision_rule": {
+                        "operand": [
+                          0,
+                          8
+                        ],
+                        "operator": "[in[",
+                        "property": "time"
+                      },
+                      "predicted_value": 0,
+                      "standard_deviation": 0
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": [
+                      3,
+                      4
+                    ],
+                    "operator": "[in[",
+                    "property": "day"
+                  }
+                },
+                {
+                  "children": [
+                    {
+                      "confidence": 0.9830508232116699,
+                      "decision_rule": {
+                        "operand": [
+                          19.166666,
+                          0
+                        ],
+                        "operator": "[in[",
+                        "property": "time"
+                      },
+                      "predicted_value": 0,
+                      "standard_deviation": 0
+                    },
+                    {
+                      "confidence": 0.4935499131679535,
+                      "decision_rule": {
+                        "operand": [
+                          0,
+                          8
+                        ],
+                        "operator": "[in[",
+                        "property": "time"
+                      },
+                      "predicted_value": 0.335,
+                      "standard_deviation": 0.33675855
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": [
+                      4,
+                      5
+                    ],
+                    "operator": "[in[",
+                    "property": "day"
+                  }
+                }
+              ],
+              "decision_rule": {
+                "operand": [
+                  3,
+                  5
+                ],
+                "operator": "[in[",
+                "property": "day"
+              }
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "confidence": 0.4972785711288452,
+                      "decision_rule": {
+                        "operand": [
+                          5,
+                          0
+                        ],
+                        "operator": "[in[",
+                        "property": "day"
+                      },
+                      "predicted_value": 0.29416668,
+                      "standard_deviation": 0.2518823
+                    },
+                    {
+                      "confidence": 0.9375,
+                      "decision_rule": {
+                        "operand": [
+                          0,
+                          3
+                        ],
+                        "operator": "[in[",
+                        "property": "day"
+                      },
+                      "predicted_value": 0,
+                      "standard_deviation": 0
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": [
+                      19.166666,
+                      19.666666
+                    ],
+                    "operator": "[in[",
+                    "property": "time"
+                  }
+                },
+                {
+                  "children": [
+                    {
+                      "confidence": 0.9983922839164734,
+                      "decision_rule": {
+                        "operand": [
+                          19.666666,
+                          7.1666665
+                        ],
+                        "operator": "[in[",
+                        "property": "time"
+                      },
+                      "predicted_value": 0,
+                      "standard_deviation": 0
+                    },
+                    {
+                      "confidence": 0.2651505470275879,
+                      "decision_rule": {
+                        "operand": [
+                          7.1666665,
+                          8
+                        ],
+                        "operator": "[in[",
+                        "property": "time"
+                      },
+                      "predicted_value": 0.065000005,
+                      "standard_deviation": 0.17416467
+                    }
+                  ],
+                  "decision_rule": {
+                    "operand": [
+                      19.666666,
+                      8
+                    ],
+                    "operator": "[in[",
+                    "property": "time"
+                  }
+                }
+              ],
+              "decision_rule": {
+                "operand": [
+                  5,
+                  3
+                ],
+                "operator": "[in[",
+                "property": "day"
+              }
+            }
+          ],
+          "decision_rule": {
+            "operand": [
+              19.166666,
+              8
+            ],
+            "operator": "[in[",
+            "property": "time"
+          }
+        }
+      ]
+    }
+  },
+  "configuration": {
+    "time_quantum": 600,
+    "learning_period": 9000000,
+    "operations_as_events": true,
+    "tree_max_depth": 5,
+    "tree_max_operations": 1000,
+    "context": {
+      "lightIntensity": {
+        "type": "continuous"
+      },
+      "time": {
+        "type": "time_of_day",
+        "is_generated": true
+      },
+      "day": {
+        "type": "day_of_week",
+        "is_generated": true
+      },
+      "tz": {
+        "type": "timezone"
+      }
+    },
+    "output": [
+      "lightIntensity"
+    ],
+    "deactivate_missing_values": true
+  }
+}

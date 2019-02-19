@@ -1,0 +1,48 @@
+[
+  {
+    "title": "fails if a property of the given context contains an unexpected value on bigger tree",
+    "context": {
+      "continuous1": 0,
+      "continuous2": 0,
+      "continuous3": 167,
+      "continuous4": 21,
+      "enum1": "toto",
+      "enum2": "ko",
+      "continuous5": 0,
+      "enum3": "yes",
+      "continuous6": 1000000,
+      "enum4": "yes",
+      "enum5": "good",
+      "enum6": "non_applicable",
+      "enum7": "average"
+    },
+    "error": {
+      "message": "Unable to take decision: value 'non_applicable' for property 'enum6' doesn't validate any of the decision rules.",
+      "metadata": {
+        "property": "enum6",
+        "value": "non_applicable",
+        "expected_values": [
+          "good",
+          "average"
+        ],
+        "decision_rules": [
+          {
+            "operand": "yes",
+            "operator": "is",
+            "property": "enum4"
+          },
+          {
+            "operand": 430,
+            "operator": "<",
+            "property": "continuous3"
+          },
+          {
+            "operand": "toto",
+            "operator": "is",
+            "property": "enum1"
+          }
+        ]
+      }
+    }
+  }
+]

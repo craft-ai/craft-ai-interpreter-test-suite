@@ -1,0 +1,101 @@
+[
+  {
+    "title": "Succeeds with a given context",
+    "context": {
+      "tz": "UTC",
+      "ot": 6,
+      "oh": 93,
+      "p": 971,
+      "dir": 80,
+      "norm": 26,
+      "time": 10
+    },
+    "output": {
+      "_version": "2.0.0",
+      "context": {
+        "tz": "UTC",
+        "ot": 6,
+        "oh": 93,
+        "p": 971,
+        "dir": 80,
+        "norm": 26,
+        "time": 10
+      },
+      "output": {
+        "it": {
+          "confidence": 0.819686770439148,
+          "decision_rules": [
+            {
+              "operand": 9.75,
+              "operator": "<",
+              "property": "ot"
+            },
+            {
+              "operand": [
+                300,
+                159.004
+              ],
+              "operator": "[in[",
+              "property": "dir"
+            },
+            {
+              "operand": 1026.5,
+              "operator": "<",
+              "property": "p"
+            },
+            {
+              "operand": [
+                8,
+                19
+              ],
+              "operator": "[in[",
+              "property": "time"
+            }
+          ],
+          "predicted_value": 18.189474,
+          "standard_deviation": 3.7130969
+        }
+      }
+    }
+  },
+  {
+    "title": "dir attribute is missing and missing values are handled",
+    "configuration": {
+      "deactivate_missing_values": false
+    },
+    "context": {
+      "tz": "UTC",
+      "ot": 6,
+      "oh": 93,
+      "p": 971,
+      "dir": null,
+      "norm": 26,
+      "time": 10
+    },
+    "output": {
+      "_version": "2.0.0",
+      "context": {
+        "tz": "UTC",
+        "ot": 6,
+        "oh": 93,
+        "p": 971,
+        "dir": null,
+        "norm": 26,
+        "time": 10
+      },
+      "output": {
+        "it": {
+          "confidence": null,
+          "decision_rules": [
+            {
+              "operand": 9.75,
+              "operator": "<",
+              "property": "ot"
+            }
+          ],
+          "predicted_value": 20.465382375
+        }
+      }
+    }
+  }
+]

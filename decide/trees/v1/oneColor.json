@@ -6,7 +6,8 @@
         "type": "enum"
       }
     },
-    "output": ["value"]
+    "output": ["value"],
+    "deactivate_missing_values": true
   },
   "trees": {
     "value": {

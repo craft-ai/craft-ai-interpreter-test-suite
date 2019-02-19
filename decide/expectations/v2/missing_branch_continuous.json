@@ -1,0 +1,64 @@
+[
+  {
+    "title": "if 'ot' attribute is 'null' use the null branch",
+    "configuration": {
+      "deactivate_missing_values": false
+    },
+    "context": {
+      "tz": "UTC",
+      "ot": 1,
+      "oh": 93,
+      "p": 971,
+      "dir": 160,
+      "norm": null,
+      "time": 13
+    },
+    "output": {
+      "_version": "2.0.0",
+      "context": {
+        "tz": "UTC",
+        "ot": 1,
+        "oh": 93,
+        "p": 971,
+        "dir": 160,
+        "norm": null,
+        "time": 13
+      },
+      "output": {
+        "it": {
+          "predicted_value": 23.0,
+          "standard_deviation": 5.6069302,
+          "confidence": 0.59692200,
+          "decision_rules": [
+            {
+              "operand": 9.75,
+              "operator": "<",
+              "property": "ot"
+            },
+            {
+              "operand": [
+                159.004,
+                300
+              ],
+              "operator": "[in[",
+              "property": "dir"
+            },
+            {
+              "operand": [
+                12,
+                1
+              ],
+              "operator": "[in[",
+              "property": "time"
+            },
+            {
+              "operand": null,
+              "operator": "is",
+              "property": "norm"
+            }
+          ]
+        }
+      }
+    }
+  }
+]

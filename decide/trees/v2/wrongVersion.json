@@ -9,28 +9,38 @@
         "type": "continuous"
       }
     },
-    "output": ["position"]
+    "output": ["position"],
+    "deactivate_missing_values": true
   },
   "trees": {
     "position": {
+      "output_values": ["Down", "Up"],
       "children": [
         {
+          "prediction": {
+            "value": "Down",
+            "confidence": 0.9973324159369238,
+            "distribution" : [0.95, 0.05],
+            "nb_samples": 30
+          },
           "decision_rule": {
             "operator": "<",
             "operand": 6,
             "property": "test"
-          },
-          "predicted_value": "Down",
-          "confidence": 0.9973324159369238
+          }
         },
         {
+          "prediction": {
+            "value": "Up",
+            "confidence": 0.3,
+            "distribution" : [0.3, 0.7],
+            "nb_samples": 30
+          },
           "decision_rule": {
             "operator": ">=",
             "operand": 6,
             "property": "test"
-          },
-          "predicted_value": "Up",
-          "confidence": 0.3
+          }
         }
       ]
     }
