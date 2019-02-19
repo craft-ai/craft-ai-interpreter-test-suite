@@ -1,0 +1,34 @@
+[
+  {
+    "title": "if category is 'null' use the null branch",
+    "configuration": {
+      "deactivate_missing_values": false
+    },
+    "context": {
+      "timeOfDay": 14.15,
+      "category": null,
+      "tz": "+00:00"
+    },
+    "output": {
+      "_version": "2.0.0",
+      "context": {
+        "timeOfDay": 14.15,
+        "category": null,
+        "tz": "+00:00"
+        },
+      "output": {
+        "open": {
+          "confidence": 0.9630500003402000,
+          "predicted_value": "true",
+          "decision_rules": [
+            {
+              "operator": "is",
+              "property": "category",
+              "operand": null
+            }
+          ]
+        }
+      }
+    }
+  }
+]
