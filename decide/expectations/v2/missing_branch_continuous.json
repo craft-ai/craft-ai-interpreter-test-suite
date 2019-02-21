@@ -56,7 +56,8 @@
               "operator": "is",
               "property": "norm"
             }
-          ]
+          ],
+          "nb_samples": 1
         }
       }
     }

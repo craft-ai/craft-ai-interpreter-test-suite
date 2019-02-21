@@ -14,7 +14,9 @@
           "confidence": 0.9921274781227112,
           "decision_rules": [
             { "operand": "-01:00", "operator": "is", "property": "tz" }
-          ]
+          ],
+          "distribution": [0.8, 0.2],
+          "nb_samples": 10
         }
       }
     }

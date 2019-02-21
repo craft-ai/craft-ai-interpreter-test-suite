@@ -23,7 +23,9 @@
               "operand": false,
               "property": "presence"
             }
-          ]
+          ],
+          "distribution": [0.0, 1.0],
+          "nb_samples": 20
         }
       }
     }
@@ -60,7 +62,9 @@
               ],
               "property": "timeOfDay"
             }
-          ]
+          ],
+          "distribution": [0.7, 0.3],
+          "nb_samples": 10
         }
       }
     }
@@ -97,7 +101,9 @@
               ],
               "property": "timeOfDay"
             }
-          ]
+          ],
+          "distribution": [0.05, 0.95],
+          "nb_samples": 15
         }
       }
     }
