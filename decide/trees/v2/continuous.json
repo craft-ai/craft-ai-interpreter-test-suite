@@ -14,7 +14,9 @@
                         "confidence": 0.9838709831237793,
                         "value": 0.52,
                         "distribution": {
-                          "standard_deviation": 0
+                          "standard_deviation": 0,
+                          "min": 0.52,
+                          "max": 0.52
                         },
                         "nb_samples": 4
                       },
@@ -32,7 +34,9 @@
                         "confidence": 0.8571428656578064,
                         "value": 0,
                         "distribution": {
-                          "standard_deviation": 0
+                          "standard_deviation": 0,
+                          "min": 0.52,
+                          "max": 0.52
                         },
                         "nb_samples": 4
                       },
@@ -59,7 +63,9 @@
                         "confidence": 0.8547552824020386,
                         "value": 0.6847388,
                         "distribution": {
-                          "standard_deviation": 0.11337655
+                          "standard_deviation": 0.11337655,
+                          "min": 0.5,
+                          "max": 0.7
                         },
                         "nb_samples": 4
                       },
@@ -77,7 +83,9 @@
                         "confidence": 0.7180213332176208,
                         "value": 0.5879104,
                         "distribution": {
-                          "standard_deviation": 0.22783813
+                          "standard_deviation": 0.22783813,
+                          "min": 0.4,
+                          "max": 0.9
                         },
                         "nb_samples": 4
                       },
@@ -116,7 +124,9 @@
                         "confidence": 0.9411764740943909,
                         "value": 0.98,
                         "distribution": {
-                          "standard_deviation": 0
+                          "standard_deviation": 0,
+                          "min": 0.98,
+                          "max": 0.98
                         },
                         "nb_samples": 4
                       },
@@ -134,7 +144,9 @@
                         "confidence": 0.75,
                         "value": 0,
                         "distribution": {
-                          "standard_deviation": 0
+                          "standard_deviation": 0,
+                          "min": 0,
+                          "max": 0
                         },
                         "nb_samples": 4
                       },
@@ -161,7 +173,9 @@
                         "confidence": 0.9846153855323792,
                         "value": 0,
                         "distribution": {
-                          "standard_deviation": 0
+                          "standard_deviation": 0,
+                          "min": 0,
+                          "max": 0
                         },
                         "nb_samples": 4
                       },
@@ -179,7 +193,9 @@
                         "confidence": 0.5253270268440247,
                         "value": 0.2857068,
                         "distribution": {
-                          "standard_deviation": 0.2553252
+                          "standard_deviation": 0.2553252,
+                          "min": 0.0,
+                          "max": 0.5
                         },
                         "nb_samples": 4
                       },
@@ -230,7 +246,9 @@
                         "confidence": 0.4893883168697357,
                         "value": 0.335,
                         "distribution": {
-                          "standard_deviation": 0.33792585
+                          "standard_deviation": 0.33792585,
+                          "min": 0.0,
+                          "max": 0.5
                         },
                         "nb_samples": 4
                       },
@@ -248,7 +266,9 @@
                         "confidence": 0.9896907210350037,
                         "value": 0,
                         "distribution": {
-                          "standard_deviation": 0
+                          "standard_deviation": 0,
+                          "min": 0.0,
+                          "max": 0.0
                         },
                         "nb_samples": 4 
                       },
@@ -278,7 +298,9 @@
                         "confidence": 0.9830508232116699,
                         "value": 0,
                         "distribution": {
-                          "standard_deviation": 0
+                          "standard_deviation": 0,
+                          "min": 0.0,
+                          "max": 0.0
                         },
                         "nb_samples": 4
                       },
@@ -296,7 +318,9 @@
                         "confidence": 0.4935499131679535,
                         "value": 0.335,
                         "distribution": {
-                          "standard_deviation": 0.33675855
+                          "standard_deviation": 0.33675855,
+                          "min": 0.0,
+                          "max": 0.6
                         },
                         "nb_samples": 4 
                       },
@@ -338,7 +362,9 @@
                         "confidence": 0.4972785711288452,
                         "value": 0.29416668,
                         "distribution": {
-                          "standard_deviation": 0.2518823 
+                          "standard_deviation": 0.2518823,
+                          "min": 0.05,
+                          "max": 0.6
                         },
                         "nb_samples": 4
                       },
@@ -356,7 +382,9 @@
                         "confidence": 0.9375,
                         "value": 0,
                         "distribution": {
-                          "standard_deviation": 0
+                          "standard_deviation": 0,
+                          "min": 0.0,
+                          "max": 0.0
                         },
                         "nb_samples": 4 
                       },
@@ -386,7 +414,9 @@
                         "confidence": 0.9983922839164734,
                         "value": 0,
                         "distribution": {
-                          "standard_deviation": 0
+                          "standard_deviation": 0,
+                          "min": 0.0,
+                          "max": 0.0
                         },
                         "nb_samples": 4
                       },
@@ -404,7 +434,9 @@
                         "confidence": 0.2651505470275879,
                         "value": 0.065000005,
                         "distribution": {
-                          "standard_deviation": 0.17416467
+                          "standard_deviation": 0.17416467,
+                          "min": 0.0,
+                          "max": 0.20
                         },
                         "nb_samples": 4
                       },

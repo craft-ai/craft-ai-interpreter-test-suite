@@ -20,7 +20,9 @@
             "value": 18.1,
             "confidence": 0.9973324159369238,
             "distribution": {
-              "standard_deviation": 1.0
+              "standard_deviation": 1.0,
+              "min": 17.1 ,
+              "max": 19.1
             },
             "nb_samples": 4
           },
@@ -35,7 +37,9 @@
             "value": null,
             "confidence": 0.0,
             "distribution": {
-              "standard_deviation": 0.0
+              "standard_deviation": 0.0,
+              "min": 0.0 ,
+              "max": 0.0
             },
             "nb_samples": 4
           },

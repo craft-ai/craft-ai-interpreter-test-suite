@@ -54,7 +54,9 @@
               "property": "norm"
             }
           ],
-          "nb_samples": 1
+          "nb_samples": 1,
+          "min": 18.0,
+          "max": 28.0
         }
       }
     }
