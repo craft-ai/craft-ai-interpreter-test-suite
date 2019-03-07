@@ -169,7 +169,9 @@
             }
           ],
           "standard_deviation": 0.17416467,
-          "nb_samples": 4
+          "nb_samples": 4,
+          "min": 0.0,
+          "max": 0.2
         }
       }
     }
@@ -224,62 +226,9 @@
               "property": "day"
             }
           ],
-          "nb_samples": 4
-        }
-      }
-    }
-  },
-  {
-    "title": "light intensity should be 0.6847388 on monday at 13h00",
-    "context": {
-      "time": 13,
-      "day": 0,
-      "tz": "+02:00"
-    },
-    "output": {
-      "_version": "2.0.0",
-      "context": {
-        "time": 13,
-        "day": 0,
-        "tz": "+02:00"
-      },
-      "output": {
-        "lightIntensity": {
-          "predicted_value": 0.6847388,
-          "confidence": 0.8547552824020386,
-          "standard_deviation": 0.11337655,
-          "decision_rules": [
-            {
-              "operand": [
-                8,
-                19.166666
-              ],
-              "operator": "[in[",
-              "property": "time"
-            },
-            {
-              "operand": [
-                0,
-                5
-              ],
-              "operator": "[in[",
-              "property": "day"
-            },
-            {
-              "operand": "+02:00",
-              "operator": "is",
-              "property": "tz"
-            },
-            {
-              "operand": [
-                0,
-                3
-              ],
-              "operator": "[in[",
-              "property": "day"
-            }
-          ],
-          "nb_samples": 4
+          "nb_samples": 4,
+          "min": 0.5,
+          "max": 0.7
         }
       }
     }
