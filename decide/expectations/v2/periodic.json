@@ -97,6 +97,7 @@
             }
           ],
           "predicted_value": 20.465382375,
+          "standard_deviation": 6.845259622423599,
           "nb_samples": 32
         }
       }

@@ -253,6 +253,7 @@
       "output": {
         "lightIntensity": {
           "predicted_value": 0.3822945,
+          "standard_deviation": 0.3689930710728021,
           "confidence": null,
           "decision_rules": [
             {
