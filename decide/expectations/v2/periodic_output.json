@@ -1,0 +1,83 @@
+[
+  {
+    "title": "timeOfDay should be 15h00 if the selected color is red.",
+    "context": {
+      "color": "red"
+    },
+    "output": {
+      "_version": "2.0.0",
+      "context": {
+        "color": "red"
+      },
+      "output": {
+        "timeOfDay": {
+          "predicted_value": 15.0,
+          "confidence": 0.9692394749,
+          "decision_rules": [
+            {
+              "operand": "red",
+              "operator": "is",
+              "property": "color"
+            }
+          ],
+          "standard_deviation": 0.1,
+          "nb_samples": 10
+        }
+      }
+    }
+  },
+  {
+    "title": "timeOfDay should be 18h00 if the selected color is pink.",
+    "context": {
+      "color": "pink"
+    },
+    "output": {
+      "_version": "2.0.0",
+      "context": {
+        "color": "pink"
+      },
+      "output": {
+        "timeOfDay": {
+          "predicted_value": 18.0,
+          "confidence": 0.7,
+          "decision_rules": [
+            {
+              "operand": "pink",
+              "operator": "is",
+              "property": "color"
+            }
+          ],
+          "standard_deviation": 0.2,
+          "nb_samples": 13
+        }
+      }
+    }
+  },
+  {
+    "title": "timeOfDay should be 10h00 if the selected color is blue.",
+    "context": {
+      "color": "blue"
+    },
+    "output": {
+      "_version": "2.0.0",
+      "context": {
+        "color": "blue"
+      },
+      "output": {
+        "timeOfDay": {
+          "predicted_value": 10.0,
+          "confidence": 0.5,
+          "decision_rules": [
+            {
+              "operand": "blue",
+              "operator": "is",
+              "property": "color"
+            }
+          ],
+          "standard_deviation": 0.3,
+          "nb_samples": 15
+        }
+      }
+    }
+  }
+]
