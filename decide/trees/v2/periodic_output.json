@@ -1,0 +1,74 @@
+{
+  "_version": "2.0.0",
+  "trees": {
+    "timeOfDay": {
+      "children": [
+        {
+          "prediction": {
+            "confidence": 0.9692394749,
+            "distribution": {
+              "standard_deviation": 0.1
+            },
+            "nb_samples": 10,
+            "value": 15.0
+          },
+          "decision_rule": {
+            "operand": "red",
+            "operator": "is",
+            "property": "color"
+          }
+        },
+        {
+          "prediction": {
+            "confidence": 0.7,
+            "distribution": {
+              "standard_deviation": 0.2
+            },
+            "nb_samples": 13,
+            "value": 18.0
+          },
+          "decision_rule": {
+            "operand": "pink",
+            "operator": "is",
+            "property": "color"
+          }
+        },
+        {
+          "prediction": {
+            "confidence": 0.5,
+            "distribution": {
+              "standard_deviation": 0.3
+            },
+            "nb_samples": 15,
+            "value": 10.0
+          },
+          "decision_rule": {
+            "operand": "blue",
+            "operator": "is",
+            "property": "color"
+          }
+        }
+      ]
+    }
+  },
+  "configuration": {
+    "time_quantum": 600,
+    "learning_period": 9000000,
+    "operations_as_events": true,
+    "tree_max_depth": 5,
+    "tree_max_operations": 1000,
+    "context": {
+      "timeOfDay": {
+        "type": "time_of_day",
+        "is_generated": false
+      },
+      "color": {
+        "type": "enum"
+      }
+    },
+    "output": [
+      "timeOfDay"
+    ],
+    "deactivate_missing_values": true
+  }
+}
