@@ -208,6 +208,58 @@
     }
   },
   {
+    "title": "is_missing_enum",
+    "rules": [
+      {
+        "operator": "is",
+        "operand": null,
+        "type": "enum"
+      }
+    ],
+    "expectation": {
+      "string": "is null"
+    }
+  },
+  {
+    "title": "is_missing_continuous",
+    "rules": [
+      {
+        "operator": "is",
+        "operand": null,
+        "type": "continuous"
+      }
+    ],
+    "expectation": {
+      "string": "is null"
+    }
+  },
+  {
+    "title": "is_optional_enum",
+    "rules": [
+      {
+        "operator": "is",
+        "operand": {},
+        "type": "enum"
+      }
+    ],
+    "expectation": {
+      "string": "is N/A"
+    }
+  },
+  {
+    "title": "is_optional_continuous",
+    "rules": [
+      {
+        "operator": "is",
+        "operand": {},
+        "type": "continous"
+      }
+    ],
+    "expectation": {
+      "string": "is N/A"
+    }
+  },
+  {
     "title": "multiple_rules",
     "rules": [
       {
