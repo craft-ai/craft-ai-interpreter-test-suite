@@ -2,18 +2,18 @@
   {
     "title": "Succeeds with a timezone given as integer",
     "context": {
-        "lightbulbColor": "#ffffff",
-        "tz": -60
+      "lightbulbColor": "#ffffff",
+      "tz": -60
     },
     "output": {
       "_version": "1.1.0",
-      "context": { "tz": "-01:00" },
+      "context": {"tz": -60},
       "output": {
         "lightbulbColor": {
           "predicted_value": "#ffffff",
           "confidence": 0.9921274781227112,
           "decision_rules": [
-            { "operand": "-01:00", "operator": "is", "property": "tz" }
+            {"operand": "-01:00", "operator": "is", "property": "tz"}
           ]
         }
       }
