@@ -16,7 +16,8 @@
             { "operand": "-01:00", "operator": "is", "property": "tz" }
           ],
           "distribution": [0.8, 0.2],
-          "nb_samples": 10
+          "nb_samples": 10,
+          "decision_path": "0-0"
         }
       }
     }

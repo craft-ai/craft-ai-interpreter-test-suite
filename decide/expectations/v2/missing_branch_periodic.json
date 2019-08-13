@@ -28,7 +28,8 @@
             }
           ],
           "distribution": [0.3, 0.1, 0.6],
-          "nb_samples": 10
+          "nb_samples": 10,
+          "decision_path": "0-2"
         }
       }
     }

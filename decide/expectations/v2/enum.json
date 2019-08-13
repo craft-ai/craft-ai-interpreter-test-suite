@@ -60,7 +60,8 @@
             }
           ],
           "distribution": [0.9, 0.0, 0.1],
-          "nb_samples": 20
+          "nb_samples": 20,
+          "decision_path": "0-0"
         }
       }
     }
@@ -92,7 +93,8 @@
             }
           ],
           "distribution": [0.9, 0.0, 0.1],
-          "nb_samples": 20
+          "nb_samples": 20,
+          "decision_path": "0-0"
         }
       }
     }
@@ -128,7 +130,8 @@
             }
           ],
           "distribution": [0.1, 0, 0.9],
-          "nb_samples": 20
+          "nb_samples": 20,
+          "decision_path": "0-1-0"
         }
       }
     }
@@ -156,7 +159,8 @@
           "decision_rules": [],
           "confidence": null,
           "distribution": [0.42, 0.12, 0.45999999999999996],
-          "nb_samples": 50
+          "nb_samples": 50,
+          "decision_path": "0"
         }
       }
     }

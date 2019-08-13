@@ -70,7 +70,8 @@
             }
           ],
           "distribution": [0.9, 0.1],
-          "nb_samples": 12
+          "nb_samples": 12,
+          "decision_path": "0-0-0-0-0-1-2"
         }
       }
     }

@@ -56,7 +56,8 @@
           "standard_deviation": 3.7130969,
           "nb_samples": 4,
           "min": 15,
-          "max": 21
+          "max": 21,
+          "decision_path": "0-0-1-0-0"
         }
       }
     }
@@ -98,7 +99,8 @@
           ],
           "predicted_value": 20.465382375,
           "standard_deviation": 6.845259622423599,
-          "nb_samples": 32
+          "nb_samples": 32,
+          "decision_path": "0-0"
         }
       }
     }
