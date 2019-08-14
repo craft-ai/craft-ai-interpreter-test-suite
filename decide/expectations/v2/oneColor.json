@@ -11,7 +11,8 @@
           "confidence": 0.99,
           "decision_rules": [],
           "distribution": [1.0],
-          "nb_samples": 1
+          "nb_samples": 1,
+          "decision_path": "0"
         }
       }
     }

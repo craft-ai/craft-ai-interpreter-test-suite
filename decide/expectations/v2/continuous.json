@@ -171,7 +171,8 @@
           "standard_deviation": 0.17416467,
           "nb_samples": 4,
           "min": 0.0,
-          "max": 0.2
+          "max": 0.2,
+          "decision_path": "0-1-1-1-1"
         }
       }
     }
@@ -228,7 +229,8 @@
           ],
           "nb_samples": 4,
           "min": 0.5,
-          "max": 0.7
+          "max": 0.7,
+          "decision_path": "0-0-0-1-0"
         }
       }
     }
@@ -265,7 +267,8 @@
               "property": "time"
             }
           ],
-          "nb_samples": 32
+          "nb_samples": 32,
+          "decision_path": "0-0"
         }
       }
     }
