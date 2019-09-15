@@ -9,8 +9,7 @@
         "type": "continuous"
       }
     },
-    "output": ["position"],
-    "deactivate_missing_values": true
+    "output": ["position"]
   },
   "trees": {
     "position": {

@@ -263,7 +263,7 @@
                             "value": "No",
                             "distribution": [0.9, 0.1],
                             "nb_samples": 12
-                          },            
+                          },
                           "decision_rule": {
                             "operand": 7,
                             "operator": "<",
@@ -278,7 +278,7 @@
                                 "value": "yes",
                                 "distribution": [0.1, 0.9],
                                 "nb_samples": 12
-                              },            
+                              },
                               "decision_rule": {
                                 "operand": 264,
                                 "operator": "<",
@@ -291,7 +291,7 @@
                                 "value": "No",
                                 "distribution": [0.9, 0.1],
                                 "nb_samples": 12
-                              },            
+                              },
                               "decision_rule": {
                                 "operand": 264,
                                 "operator": ">=",
@@ -320,7 +320,7 @@
                             "value": "No",
                             "distribution": [0.9, 0.1],
                             "nb_samples": 12
-                          },            
+                          },
                           "decision_rule": {
                             "operand": 104,
                             "operator": "<",
@@ -333,7 +333,7 @@
                             "value": "No",
                             "distribution": [0.9, 0.1],
                             "nb_samples": 12
-                          },            
+                          },
                           "decision_rule": {
                             "operand": 104,
                             "operator": ">=",
@@ -366,7 +366,7 @@
                                 "value": "No",
                                 "distribution": [0.9, 0.1],
                                 "nb_samples": 12
-                              },                
+                              },
                               "decision_rule": {
                                 "operand": "titi",
                                 "operator": "is",
@@ -379,7 +379,7 @@
                                 "value": "No",
                                 "distribution": [0.9, 0.1],
                                 "nb_samples": 12
-                              },                
+                              },
                               "decision_rule": {
                                 "operand": "toto",
                                 "operator": "is",
@@ -498,7 +498,7 @@
                                 "value": "No",
                                 "distribution": [0.9, 0.1],
                                 "nb_samples": 12
-                              },            
+                              },
                               "decision_rule": {
                                 "operand": "good",
                                 "operator": "is",
@@ -695,7 +695,7 @@
                                 "value": "yes",
                                 "distribution": [0.1, 0.9],
                                 "nb_samples": 12
-                              },        
+                              },
                               "decision_rule": {
                                 "operand": "good",
                                 "operator": "is",

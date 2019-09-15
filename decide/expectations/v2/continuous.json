@@ -236,15 +236,13 @@
     }
   },
   {
-    "title": "Day attribute is missing and missing values are handled",
-    "configuration": {
-      "deactivate_missing_values": false
-    },
+    "title": "Day attribute is missing and not matching attribute is activated",
     "context": {
       "time": 13,
       "day": null,
       "tz": "+02:00"
     },
+    "allow_not_matching": true,
     "output": {
       "_version": "2.0.0",
       "context": {

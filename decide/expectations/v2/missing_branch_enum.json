@@ -1,9 +1,6 @@
 [
   {
     "title": "if enum2 'null', use the null branch",
-    "configuration": {
-      "deactivate_missing_values": false
-    },
     "context": {
       "continuous1": 0,
       "continuous2": 0,

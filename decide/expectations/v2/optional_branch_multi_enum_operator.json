@@ -1,9 +1,6 @@
 [
   {
     "title": "if category is NA/undefined/{} use the optional branch",
-    "configuration": {
-      "deactivate_missing_values": false
-    },
     "context": {
       "timeOfDay": 14.15,
       "category": {},

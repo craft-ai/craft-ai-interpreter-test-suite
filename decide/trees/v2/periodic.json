@@ -32,8 +32,7 @@
     },
     "output": [
       "it"
-    ],
-    "deactivate_missing_values": true
+    ]
   },
   "trees": {
     "it": {
@@ -68,7 +67,7 @@
                         "distribution": {
                           "standard_deviation": 7.8522334,
                           "min": 14.0,
-                          "max": 28.0 
+                          "max": 28.0
                         },
                         "nb_samples": 4
                       },
@@ -97,7 +96,7 @@
                         "distribution": {
                           "standard_deviation": 3.7179956,
                           "min": 14.0,
-                          "max": 21.0 
+                          "max": 21.0
                         },
                         "nb_samples": 4
                       },
@@ -114,7 +113,7 @@
                         "distribution": {
                           "standard_deviation": 3.9589624,
                           "min": 11.0,
-                          "max": 17.0 
+                          "max": 17.0
                         },
                         "nb_samples": 4
                       },
@@ -155,7 +154,7 @@
                         "distribution": {
                           "standard_deviation": 3.7130969,
                           "min": 15.0,
-                          "max": 21.0 
+                          "max": 21.0
                         },
                         "nb_samples": 4
                       },
@@ -175,7 +174,7 @@
                         "distribution": {
                           "standard_deviation": 5.2957106,
                           "min": 16.0,
-                          "max": 26.0 
+                          "max": 26.0
                         },
                         "nb_samples": 4
                       },
@@ -204,7 +203,7 @@
                         "distribution": {
                           "standard_deviation": 5.71699,
                           "min": 25.0,
-                          "max": 35.0 
+                          "max": 35.0
                         },
                         "nb_samples": 4
                       },
@@ -221,7 +220,7 @@
                         "distribution": {
                           "standard_deviation": 4.8617277,
                           "min": 19.0,
-                          "max": 27.0 
+                          "max": 27.0
                         },
                         "nb_samples": 4
                       },
@@ -268,7 +267,7 @@
                         "distribution": {
                           "standard_deviation": 0.83490247,
                           "min": 15.0,
-                          "max": 17.0 
+                          "max": 17.0
                         },
                         "nb_samples": 4
                       },
@@ -285,7 +284,7 @@
                         "distribution": {
                           "standard_deviation": 0.05773552,
                           "min": 19.7,
-                          "max": 20.0 
+                          "max": 20.0
                         },
                         "nb_samples": 4
                       },

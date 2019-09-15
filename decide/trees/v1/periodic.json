@@ -32,8 +32,7 @@
     },
     "output": [
       "it"
-    ],
-    "deactivate_missing_values": true
+    ]
   },
   "trees": {
     "it": {

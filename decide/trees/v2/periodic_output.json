@@ -68,7 +68,6 @@
     },
     "output": [
       "timeOfDay"
-    ],
-    "deactivate_missing_values": true
+    ]
   }
 }
