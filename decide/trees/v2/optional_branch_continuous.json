@@ -21,7 +21,8 @@
         "type": "continuous"
       },
       "norm": {
-        "type": "continuous"
+        "type": "continuous",
+        "is_optional": true
       },
       "ot": {
         "type": "continuous"
