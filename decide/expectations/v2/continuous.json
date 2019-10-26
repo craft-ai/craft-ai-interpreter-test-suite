@@ -236,7 +236,7 @@
     }
   },
   {
-    "title": "Day attribute is missing and not matching attribute is activated",
+    "title": "Day attribute is missing",
     "context": {
       "time": 13,
       "day": null,
