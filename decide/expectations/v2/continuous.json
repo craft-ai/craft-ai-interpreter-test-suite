@@ -242,7 +242,6 @@
       "day": null,
       "tz": "+02:00"
     },
-    "allow_not_matching": true,
     "output": {
       "_version": "2.0.0",
       "context": {
