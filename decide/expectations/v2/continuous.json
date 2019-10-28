@@ -195,7 +195,7 @@
         "lightIntensity": {
           "predicted_value": 0.6847388,
           "confidence": 0.8547552824020386,
-          "standard_deviation": 0.11337655,
+          "standard_deviation": 0,
           "decision_rules": [
             {
               "operand": [
@@ -255,7 +255,7 @@
       "output": {
         "lightIntensity": {
           "predicted_value": 0.3822945,
-          "standard_deviation": 0.3689930710728021,
+          "standard_deviation": 0.3673035904913154,
           "confidence": null,
           "decision_rules": [
             {
