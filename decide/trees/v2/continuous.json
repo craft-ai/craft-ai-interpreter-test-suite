@@ -63,7 +63,7 @@
                         "confidence": 0.8547552824020386,
                         "value": 0.6847388,
                         "distribution": {
-                          "standard_deviation": 0.11337655,
+                          "standard_deviation": 0,
                           "min": 0.5,
                           "max": 0.7
                         },
@@ -270,7 +270,7 @@
                           "min": 0.0,
                           "max": 0.0
                         },
-                        "nb_samples": 4 
+                        "nb_samples": 4
                       },
                       "decision_rule": {
                         "operand": [
@@ -322,7 +322,7 @@
                           "min": 0.0,
                           "max": 0.6
                         },
-                        "nb_samples": 4 
+                        "nb_samples": 4
                       },
                       "decision_rule": {
                         "operand": [
@@ -386,7 +386,7 @@
                           "min": 0.0,
                           "max": 0.0
                         },
-                        "nb_samples": 4 
+                        "nb_samples": 4
                       },
                       "decision_rule": {
                         "operand": [
