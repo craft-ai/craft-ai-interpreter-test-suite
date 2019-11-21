@@ -53,8 +53,7 @@
     },
     "output": [
       "IndicateurCraft"
-    ],
-    "deactivate_missing_values": true
+    ]
   },
   "trees": {
     "IndicateurCraft": {

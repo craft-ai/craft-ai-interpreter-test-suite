@@ -19,8 +19,7 @@
     "output": [
       "open"
     ],
-    "time_quantum": 300,
-    "deactivate_missing_values": true
+    "time_quantum": 300
   },
   "trees": {
     "open": {

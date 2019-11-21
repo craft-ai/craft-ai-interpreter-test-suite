@@ -63,10 +63,7 @@
     }
   },
   {
-    "title": "dir attribute is missing and missing values are handled",
-    "configuration": {
-      "deactivate_missing_values": false
-    },
+    "title": "dir attribute is missing",
     "context": {
       "tz": "UTC",
       "ot": 6,

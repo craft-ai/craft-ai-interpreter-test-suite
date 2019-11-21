@@ -1,9 +1,6 @@
 [
   {
     "title": "if 'ot' attribute is 'null' use the null branch",
-    "configuration": {
-      "deactivate_missing_values": false
-    },
     "context": {
       "tz": "UTC",
       "ot": 1,

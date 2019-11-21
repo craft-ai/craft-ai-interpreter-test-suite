@@ -236,10 +236,7 @@
     }
   },
   {
-    "title": "Day attribute is missing and missing values are handled",
-    "configuration": {
-      "deactivate_missing_values": false
-    },
+    "title": "Day attribute is missing",
     "context": {
       "time": 13,
       "day": null,

@@ -1,9 +1,6 @@
 [
   {
     "title": "if time of day is 'null' use the null branch",
-    "configuration": {
-      "deactivate_missing_values": false
-    },
     "context": {
       "timeOfDay": null,
       "category": "international",

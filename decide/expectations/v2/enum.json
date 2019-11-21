@@ -137,10 +137,7 @@
     }
   },
   {
-    "title": "Time of day is missing and missing values are handled",
-    "configuration": {
-      "deactivate_missing_values": false
-    },
+    "title": "Time of day is missing",
     "context": {
       "timeOfDay": null,
       "category": "international",

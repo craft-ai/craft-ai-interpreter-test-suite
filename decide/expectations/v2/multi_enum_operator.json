@@ -123,29 +123,28 @@
     }
   },
   {
-    "title": "fails if one property of the given context has an invalid 'category' value - must be in ['a', 'b', 'c', 'd', 'e']",
+    "title": "succeed if one property of the given context has an invalid 'category' value and compute the distribution",
     "context": {
       "timeOfDay": 14.15,
       "category": "f",
       "tz": "+00:00"
     },
-    "error": {
-      "message": "Unable to take decision: value 'f' for property 'category' doesn't validate any of the decision rules.",
-      "metadata": {
-        "decision_rules": [],
-        "expected_values": [
-              [
-                "a",
-                "b",
-                "c"
-              ],
-              [
-                "d",
-                "e"
-              ]
-        ],
-        "property": "category",
-        "value": "f"
+    "output": {
+      "_version": "2.0.0",
+      "context": {
+        "timeOfDay": 14.15,
+        "category": "f",
+        "tz": "+00:00"
+      },
+      "output": {
+        "open": {
+          "predicted_value": "false",
+          "confidence": null,
+          "decision_rules": [],
+          "distribution": [0.43888888888888894, 0.13333333333333333, 0.4277777777777778],
+          "nb_samples": 45,
+          "decision_path": "0"
+        }
       }
     }
   }
