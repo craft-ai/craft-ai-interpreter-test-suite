@@ -1,0 +1,23 @@
+{
+  "_version": "2.0.0",
+  "configuration": {
+    "context": {
+      "position": {
+        "type": "continuous"
+      },
+      "test": {
+        "type": "enum"
+      }
+    },
+    "output": ["position"]
+  },
+  "trees": {
+    "position": 
+     {
+       "prediction": {  
+         "confidence": 0,
+         "nb_samples": 0
+       }
+     }
+  }
+}

@@ -1,0 +1,11 @@
+[
+  {
+    "title": "Fails tree based on no context operations",
+    "context": {
+      "test": "true"
+    },
+    "error": {
+      "message": "Unable to take decision: the decision tree is not based on any context operations."
+    }
+  }
+]
