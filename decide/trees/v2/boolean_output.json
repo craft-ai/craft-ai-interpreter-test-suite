@@ -1,0 +1,97 @@
+{
+  "_version": "2.0.0",
+  "configuration": {
+    "context": {
+      "presence": {
+        "type": "boolean"
+      },
+      "timeOfDay": {
+        "type": "time_of_day",
+        "is_generated": true
+      },
+      "tz": {
+        "type": "timezone"
+      },
+      "is_on": {
+        "type": "boolean"
+      }
+    },
+    "output": [
+      "is_on"
+    ],
+    "time_quantum": 300
+  },
+  "trees": {
+    "is_on": {
+      "output_values": [
+        true,
+        false
+      ],
+      "children": [
+        {
+          "decision_rule": {
+            "operator": "is",
+            "operand": true,
+            "property": "presence"
+          },
+          "children": [
+            {
+              "decision_rule": {
+                "operator": "[in[",
+                "operand": [
+                  14.116667,
+                  14.2
+                ],
+                "property": "timeOfDay"
+              },
+              "prediction": {
+                "confidence": 0.6774609088897705,
+                "value": true,
+                "distribution": [
+                  0.7,
+                  0.3
+                ],
+                "nb_samples": 10
+              }
+            },
+            {
+              "decision_rule": {
+                "operator": "[in[",
+                "operand": [
+                  14.2,
+                  15.0
+                ],
+                "property": "timeOfDay"
+              },
+              "prediction": {
+                "confidence": 0.9630500003402000,
+                "value": false,
+                "distribution": [
+                  0.05,
+                  0.95
+                ],
+                "nb_samples": 15
+              }
+            }
+          ]
+        },
+        {
+          "decision_rule": {
+            "operator": "is",
+            "operand": false,
+            "property": "presence"
+          },
+          "prediction": {
+            "confidence": 0.6774609088897705,
+            "value": false,
+            "distribution": [
+              0.0,
+              1.0
+            ],
+            "nb_samples": 20
+          }
+        }
+      ]
+    }
+  }
+}
