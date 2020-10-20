@@ -3,8 +3,7 @@
   "configuration": {
     "context": {
       "category": {
-        "type": "enum",
-        "is_optional": true
+        "type": "enum"
       },
       "timeOfDay": {
         "type": "time_of_day",

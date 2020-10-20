@@ -27,8 +27,7 @@
         "type": "enum"
       },
       "enum2": {
-        "type": "enum",
-        "is_optional": true
+        "type": "enum"
       },
       "continuous5": {
         "type": "continuous"
