@@ -6,8 +6,7 @@
         "type": "enum"
       },
       "timeOfDay": {
-        "type": "time_of_day",
-        "is_optional": true
+        "type": "time_of_day"
       },
       "tz": {
         "type": "timezone"
